@@ -1,0 +1,1 @@
+export function Section({children,dark=false,className=''}:{children:React.ReactNode;dark?:boolean;className?:string}){return <section className={`${dark?'bg-[#123d31] text-white':'bg-white'} py-20 md:py-28 ${className}`}><div className="container">{children}</div></section>}

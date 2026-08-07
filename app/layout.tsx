@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import './globals.css';import {LanguageProvider} from '@/components/LanguageProvider';import {Header} from '@/components/Header';import {Footer} from '@/components/Footer';
+export const metadata:Metadata={title:{default:'საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია',template:'%s | Orienteering Georgia'},description:'Georgian National Orienteering Federation — history, learning, revival and community.',metadataBase:new URL('https://www.orienteering.ge')};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="ka"><body><LanguageProvider><Header/><main>{children}</main><Footer/></LanguageProvider></body></html>}
