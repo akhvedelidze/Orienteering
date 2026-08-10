@@ -1,5 +1,6 @@
 import {Activity, HistoryEntry, HistoricalMap, HistoricalPerson, LearningLesson, NewsArticle} from './types';
 export type Lang='ka'|'en'; export const t=(l:Lang,ka:string,en:string)=>l==='ka'?ka:en;
+export const federationLogo='/images/geof-logo.png';
 export const nav=[['/','მთავარი','Home'],['/federation','ფედერაცია','Federation'],['/history','ისტორია','History'],['/orienteering','ორიენტირება','Orienteering'],['/learn','სწავლა','Learn'],['/activities','აქტივობები','Activities'],['/news','სიახლეები','News'],['/resources','რესურსები','Resources'],['/contact','კონტაქტი','Contact']];
 // FACTUAL PLACEHOLDERS: no unverified names, dates, results or affiliations are published.
 export const history:HistoryEntry[]=[
