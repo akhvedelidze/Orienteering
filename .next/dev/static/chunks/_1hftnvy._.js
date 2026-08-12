@@ -426,6 +426,8 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 __turbopack_context__.s([
     "activities",
     ()=>activities,
+    "featuredLinkIds",
+    ()=>featuredLinkIds,
     "federationLogo",
     ()=>federationLogo,
     "history",
@@ -442,6 +444,8 @@ __turbopack_context__.s([
     ()=>people,
     "t",
     ()=>t,
+    "usefulLinkGroups",
+    ()=>usefulLinkGroups,
     "videoGroups",
     ()=>videoGroups
 ]);
@@ -821,6 +825,275 @@ const videoGroups = [
             }
         ]
     }
+];
+const usefulLinkGroups = [
+    {
+        id: 'beginners',
+        ka: 'სწავლა დამწყებთათვის',
+        en: 'Learning for beginners',
+        links: [
+            {
+                id: 'learn-o',
+                featured: true,
+                title: 'Learn Orienteering',
+                url: 'https://www.learnorienteering.com/',
+                ctaKa: 'ეწვიეთ ვებსაიტს',
+                ctaEn: 'Visit the website',
+                descriptionKa: 'ეტაპობრივი სასწავლო პლატფორმა დამწყებიდან საშუალო დონემდე. მოიცავს რუკის წაკითხვას, კომპასს, აზიმუტს, რელიეფს, მარშრუტის არჩევასა და სხვა ნავიგაციურ ტექნიკებს.',
+                descriptionEn: 'A step-by-step learning platform from beginner to intermediate. Covers map reading, compass, bearing, terrain, route choice and other navigation techniques.'
+            },
+            {
+                id: 'better-beginner',
+                featured: true,
+                title: 'Better Orienteering — Beginner',
+                url: 'https://betterorienteering.org/beginner/',
+                ctaKa: 'დაიწყეთ სწავლა',
+                ctaEn: 'Start learning',
+                descriptionKa: 'დამწყებთათვის განკუთვნილი ვიდეოები, პრაქტიკული განმარტებები და სავარჯიშოები.',
+                descriptionEn: 'Videos, practical explanations and exercises for beginners.'
+            },
+            {
+                id: 'better-teaching',
+                title: 'Better Orienteering — Schools and Teaching',
+                url: 'https://betterorienteering.org/teaching/',
+                ctaKa: 'სასწავლო რესურსების ნახვა',
+                ctaEn: 'View teaching resources',
+                descriptionKa: 'რესურსები მასწავლებლებისთვის, სკოლებისა და ახალგაზრდული ჯგუფებისთვის. მოიცავს გაკვეთილების გეგმებსა და ორიენტირების სწავლების რეკომენდაციებს.',
+                descriptionEn: 'Resources for teachers, schools and youth groups, including lesson plans and teaching recommendations.'
+            },
+            {
+                id: 'ousa-training',
+                title: 'Orienteering USA — Training',
+                url: 'https://orienteeringusa.org/resources/training/',
+                ctaKa: 'სასწავლო პროგრამის ნახვა',
+                ctaEn: 'View the training programme',
+                descriptionKa: 'ოთხდონიანი სასწავლო პროგრამა, რომელიც მონაწილეს დამწყებიდან რთულ ნავიგაციურ უნარებამდე ეტაპობრივად ავითარებს.',
+                descriptionEn: 'A four-level training programme that develops participants from beginner skills to more complex navigation.'
+            },
+            {
+                id: 'cascade',
+                title: 'Cascade Orienteering — Beginner Skills',
+                url: 'https://cascadeoc.org/training/beginner-skills/',
+                ctaKa: 'დამწყების გაკვეთილების ნახვა',
+                ctaEn: 'View beginner lessons',
+                descriptionKa: 'მოკლე და გასაგები მასალა რუკის მასშტაბის, ფერების, სიმბოლოებისა და კონტროლის აღწერების შესახებ.',
+                descriptionEn: 'Short, clear material on map scale, colours, symbols and control descriptions.'
+            }
+        ]
+    },
+    {
+        id: 'schools',
+        ka: 'სკოლებისა და მასწავლებლებისთვის',
+        en: 'For schools and teachers',
+        links: [
+            {
+                id: 'wow',
+                featured: true,
+                title: 'World Orienteering Week',
+                url: 'https://worldorienteeringweek.com/',
+                ctaKa: 'ეწვიეთ ვებსაიტს',
+                ctaEn: 'Visit the website',
+                descriptionKa: 'IOF-ის საერთაშორისო ინიციატივა, რომელიც სკოლებსა და კლუბებს ორიენტირების სასწავლო ღონისძიებების ჩატარებაში ეხმარება.',
+                descriptionEn: 'An IOF international initiative that helps schools and clubs run orienteering learning events.'
+            },
+            {
+                id: 'iof-recreational',
+                title: 'IOF — Recreational Orienteering',
+                url: 'https://orienteering.sport/iof/global-development/recreational-orienteering/',
+                ctaKa: 'რესურსების ნახვა',
+                ctaEn: 'View resources',
+                descriptionKa: 'სასკოლო, ახალგაზრდული და გასართობი ორიენტირების აქტივობები და საერთაშორისო რესურსები.',
+                descriptionEn: 'School, youth and recreational orienteering activities and international resources.'
+            },
+            {
+                id: 'iof-edu',
+                title: 'IOF — Educational Material',
+                url: 'https://orienteering.sport/iof/search-materials/',
+                ctaKa: 'მასალების მოძიება',
+                ctaEn: 'Search materials',
+                descriptionKa: 'საერთაშორისო სასწავლო მასალების საძიებო სივრცე დამწყებებისთვის, სკოლებისთვის, მწვრთნელებისა და ღონისძიებების ორგანიზატორებისთვის.',
+                descriptionEn: 'A search space for international educational materials for beginners, schools, coaches and event organisers.'
+            },
+            {
+                id: 'school-videos',
+                title: 'School Orienteering — ვიდეოკრებული',
+                url: 'https://www.youtube.com/playlist?list=PLjECyHDRqfzWwPov4Txx5XtXReOKx3Lfd',
+                ctaKa: 'ვიდეოკრებულის ნახვა',
+                ctaEn: 'View the video collection',
+                descriptionKa: 'IOF-ისა და Enrich Education-ის ერთობლივი ვიდეომასალები სასკოლო ორიენტირებისა და გარე სწავლებისთვის.',
+                descriptionEn: 'Joint IOF and Enrich Education videos for school orienteering and outdoor teaching.'
+            }
+        ]
+    },
+    {
+        id: 'maps',
+        ka: 'რუკები და სიმბოლოები',
+        en: 'Maps and symbols',
+        links: [
+            {
+                id: 'iof-mapping',
+                title: 'IOF Mapping',
+                url: 'https://orienteering.sport/iof/mapping/',
+                ctaKa: 'ოფიციალური სპეციფიკაციების ნახვა',
+                ctaEn: 'View official specifications',
+                descriptionKa: 'ორიენტირების რუკების ოფიციალური საერთაშორისო სპეციფიკაციები: ტყის, სპრინტის, MTB და სათხილამურო ორიენტირების რუკები.',
+                descriptionEn: 'Official international specifications for orienteering maps: forest, sprint, MTB and ski orienteering.'
+            },
+            {
+                id: 'omap-wiki',
+                featured: true,
+                title: 'O-Map Wiki',
+                url: 'https://omapwiki.orienteering.sport/',
+                ctaKa: 'O-Map Wiki-ის გახსნა',
+                ctaEn: 'Open O-Map Wiki',
+                descriptionKa: 'რუკის სიმბოლოების ვიზუალური ცნობარი ფოტოებით, განმარტებებითა და მათი სწორად გამოყენების მაგალითებით. განსაკუთრებით სასარგებლოა რუკის შემქმნელებისა და მასწავლებლებისთვის.',
+                descriptionEn: 'A visual reference of map symbols with photos, explanations and examples of correct use. Especially useful for mapmakers and teachers.'
+            },
+            {
+                id: 'iof-controls',
+                title: 'IOF Control Descriptions',
+                url: 'https://orienteering.sport/iof/rules/control-descriptions/',
+                ctaKa: 'კონტროლის აღწერების ნახვა',
+                ctaEn: 'View control descriptions',
+                descriptionKa: 'საკონტროლო პუნქტების აღწერის საერთაშორისო სიმბოლოები და მოქმედი ოფიციალური სპეციფიკაცია.',
+                descriptionEn: 'International symbols for control descriptions and the current official specification.'
+            },
+            {
+                id: 'learn-symbols',
+                title: 'Learn Orienteering — IOF Symbols',
+                url: 'https://www.learnorienteering.com/AdIOFsymbols.html',
+                ctaKa: 'სიმბოლოების სწავლა',
+                ctaEn: 'Learn the symbols',
+                descriptionKa: 'კონტროლის აღწერების სიმბოლოების შედარებით მარტივი, დამწყებზე მორგებული განმარტებები.',
+                descriptionEn: 'Simpler, beginner-friendly explanations of control description symbols.'
+            }
+        ]
+    },
+    {
+        id: 'orgs',
+        ka: 'საერთაშორისო ორგანიზაციები და კალენდრები',
+        en: 'International organisations and calendars',
+        links: [
+            {
+                id: 'iof',
+                featured: true,
+                title: 'International Orienteering Federation — IOF',
+                url: 'https://orienteering.sport/',
+                ctaKa: 'ეწვიეთ IOF-ის ვებსაიტს',
+                ctaEn: 'Visit the IOF website',
+                descriptionKa: 'საერთაშორისო ორიენტირების ფედერაციის ოფიციალური ვებსაიტი — წესები, დისციპლინები, სიახლეები, განათლება და განვითარების პროგრამები.',
+                descriptionEn: 'The official website of the International Orienteering Federation — rules, disciplines, news, education and development programmes.'
+            },
+            {
+                id: 'eventor',
+                featured: true,
+                title: 'IOF Eventor',
+                url: 'https://eventor.orienteering.sport/',
+                ctaKa: 'ღონისძიებების კალენდრის ნახვა',
+                ctaEn: 'View the event calendar',
+                descriptionKa: 'მსოფლიო და რეგიონული შეჯიბრებების ოფიციალური კალენდარი, მონაწილეთა ინფორმაცია, შედეგები და ღონისძიებების დოკუმენტები.',
+                descriptionEn: 'The official calendar of world and regional events, with participant information, results and event documents.'
+            },
+            {
+                id: 'ranking',
+                title: 'IOF World Ranking',
+                url: 'https://ranking.orienteering.org/',
+                ctaKa: 'მსოფლიო რეიტინგის ნახვა',
+                ctaEn: 'View world ranking',
+                descriptionKa: 'მსოფლიო რეიტინგები, სპორტსმენების პროფილები და სარეიტინგო შეჯიბრებების კალენდარი.',
+                descriptionEn: 'World rankings, athlete profiles and the ranking event calendar.'
+            },
+            {
+                id: 'british',
+                title: 'British Orienteering',
+                url: 'https://www.britishorienteering.org.uk/',
+                ctaKa: 'ეწვიეთ ვებსაიტს',
+                ctaEn: 'Visit the website',
+                descriptionKa: 'დიდი ბრიტანეთის ეროვნული ფედერაციის ვებსაიტი სასწავლო, საკლუბო და სამწვრთნელო რესურსებით.',
+                descriptionEn: 'The website of the British national federation, with learning, club and coaching resources.'
+            },
+            {
+                id: 'ousa',
+                title: 'Orienteering USA',
+                url: 'https://orienteeringusa.org/',
+                ctaKa: 'ეწვიეთ ვებსაიტს',
+                ctaEn: 'Visit the website',
+                descriptionKa: 'აშშ-ის ორიენტირების ფედერაციის რესურსები — სწავლება, კლუბების განვითარება, შეჯიბრებების ორგანიზება და უსაფრთხოება.',
+                descriptionEn: 'Resources from Orienteering USA — teaching, club development, event organisation and safety.'
+            }
+        ]
+    },
+    {
+        id: 'analysis',
+        ka: 'ვარჯიში და მარშრუტის ანალიზი',
+        en: 'Training and route analysis',
+        links: [
+            {
+                id: 'livelox',
+                featured: true,
+                title: 'Livelox',
+                url: 'https://www.livelox.com/',
+                ctaKa: 'გახსენით Livelox',
+                ctaEn: 'Open Livelox',
+                descriptionKa: 'GPS-მარშრუტების ჩაწერისა და შედარების პლატფორმა. საშუალებას გაძლევთ გააანალიზოთ საკუთარი გზა, დროის დანაკარგი და სხვა მონაწილეთა მარშრუტები.',
+                descriptionEn: 'A platform for recording and comparing GPS routes. Analyse your own route, time loss and other participants’ routes.'
+            },
+            {
+                id: 'routegadget',
+                title: 'RouteGadget',
+                url: 'https://www.routegadget.co.uk/',
+                ctaKa: 'გახსენით RouteGadget',
+                ctaEn: 'Open RouteGadget',
+                descriptionKa: 'შეჯიბრების შემდეგ მარშრუტების დახატვის, GPS-ტრეკების ატვირთვის, მონაწილეთა გზებისა და მონაკვეთების დროების შედარების ინსტრუმენტი.',
+                descriptionEn: 'A tool for drawing routes after an event, uploading GPS tracks, and comparing participants’ routes and split times.'
+            },
+            {
+                id: 'iorienteering',
+                title: 'iOrienteering',
+                url: 'https://www.iorienteering.com/',
+                ctaKa: 'ეწვიეთ iOrienteering-ს',
+                ctaEn: 'Visit iOrienteering',
+                descriptionKa: 'მობილური პლატფორმა, რომლის საშუალებითაც შესაძლებელია ორიენტირების ღონისძიებების პოვნა, მარტივი დისტანციების შექმნა და QR-კოდებით დროის აღრიცხვა.',
+                descriptionEn: 'A mobile platform for finding orienteering events, creating simple courses and timing with QR codes.'
+            }
+        ]
+    },
+    {
+        id: 'news',
+        ka: 'სიახლეები და საერთაშორისო საზოგადოება',
+        en: 'News and the international community',
+        links: [
+            {
+                id: 'worldofo',
+                featured: true,
+                title: 'World of O',
+                url: 'https://worldofo.com/',
+                ctaKa: 'ეწვიეთ World of O-ს',
+                ctaEn: 'Visit World of O',
+                descriptionKa: 'საერთაშორისო ორიენტირების სიახლეები, შეჯიბრებების ანალიზი, რუკები, მარშრუტები და მნიშვნელოვანი მოვლენები მთელი მსოფლიოდან.',
+                descriptionEn: 'International orienteering news, event analysis, maps, routes and major stories from around the world.'
+            },
+            {
+                id: 'iof-software',
+                title: 'IOF-ის პროგრამული უზრუნველყოფის ცნობარი',
+                url: 'https://orienteering.sport/iof/it/list-of-software-for-orienteering/',
+                ctaKa: 'პროგრამების ცნობარის ნახვა',
+                ctaEn: 'View the software list',
+                descriptionKa: 'ორიენტირების რუკების, დისტანციების დაგეგმვის, შედეგების, GPS-ანალიზისა და ღონისძიებების მართვის პროგრამების ჩამონათვალი.',
+                descriptionEn: 'A list of software for orienteering maps, course planning, results, GPS analysis and event management.'
+            }
+        ]
+    }
+];
+const featuredLinkIds = [
+    'iof',
+    'learn-o',
+    'better-beginner',
+    'wow',
+    'omap-wiki',
+    'eventor',
+    'livelox',
+    'worldofo'
 ];
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

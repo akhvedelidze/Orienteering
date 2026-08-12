@@ -6,3 +6,4 @@ export interface Activity { id:string; slug:string; titleKa:string; titleEn:stri
 export interface LearningLesson { id:string; slug:string; level:number; order:number; titleKa:string; titleEn:string; summaryKa:string; summaryEn:string; contentKa:string[]; contentEn:string[]; images:string[]; downloadableResources:string[] }
 export interface NewsArticle { id:string; slug:string; titleKa:string; titleEn:string; summaryKa:string; summaryEn:string; contentKa:string[]; contentEn:string[]; image?:string; category:string; publishedAt?:string }
 export interface VideoResource { id:string; youtubeId?:string; playlistId?:string; titleKa:string; titleEn:string; topicKa:string; topicEn:string; descriptionKa:string; descriptionEn:string; orgKa?:string; orgEn?:string }
+export interface UsefulLink { id:string; featured?:boolean; title:string; url:string; ctaKa:string; ctaEn:string; descriptionKa:string; descriptionEn:string }

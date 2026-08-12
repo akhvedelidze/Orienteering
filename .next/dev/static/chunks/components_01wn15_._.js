@@ -17,6 +17,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$compass$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Compass$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/compass.mjs [app-client] (ecmascript) <export default as Compass>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/download.mjs [app-client] (ecmascript) <export default as Download>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.mjs [app-client] (ecmascript) <export default as FileText>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$earth$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/earth.mjs [app-client] (ecmascript) <export default as Globe2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Map$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map.mjs [app-client] (ecmascript) <export default as Map>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/play.mjs [app-client] (ecmascript) <export default as Play>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.mjs [app-client] (ecmascript) <export default as Users>");
@@ -1170,9 +1171,10 @@ function Library({ lang, slug }) {
         'რუკები|Maps',
         'ისტორიული მასალები|Historical materials',
         'ოფიციალური დოკუმენტები|Official documents',
-        'სასარგებლო ბმულები|Useful links',
         'სახელმძღვანელოები|Guides'
     ];
+    const allLinks = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usefulLinkGroups"].flatMap((g)=>g.links);
+    const featured = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["featuredLinkIds"].map((id)=>allLinks.find((l)=>l.id === id)).filter((l)=>Boolean(l));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Section"], {
@@ -1188,7 +1190,7 @@ function Library({ lang, slug }) {
                                         className: "text-orange-600"
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 66,
                                         columnNumber: 124
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1196,7 +1198,7 @@ function Library({ lang, slug }) {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, a, b)
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 66,
                                         columnNumber: 163
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1204,7 +1206,7 @@ function Library({ lang, slug }) {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'მასალა დაემატება გამოქვეყნების შემდეგ.', 'Material will appear when published.')
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 66,
                                         columnNumber: 210
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1214,7 +1216,7 @@ function Library({ lang, slug }) {
                                                 size: 14
                                             }, void 0, false, {
                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                lineNumber: 64,
+                                                lineNumber: 66,
                                                 columnNumber: 433
                                             }, this),
                                             " ",
@@ -1222,16 +1224,57 @@ function Library({ lang, slug }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 66,
                                         columnNumber: 346
                                     }, this)
                                 ]
                             }, b, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 64,
+                                lineNumber: 66,
                                 columnNumber: 94
                             }, this);
                         }),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "#links",
+                            className: "card border-orange-200 bg-orange-50/40",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$earth$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe2$3e$__["Globe2"], {
+                                    className: "text-orange-600"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/InnerPage.tsx",
+                                    lineNumber: 66,
+                                    columnNumber: 585
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "mt-8 text-xl",
+                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'სასარგებლო ბმულები', 'Useful links')
+                                }, void 0, false, {
+                                    fileName: "[project]/components/InnerPage.tsx",
+                                    lineNumber: 66,
+                                    columnNumber: 622
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-3 text-sm text-slate-500",
+                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'საერთაშორისო სასწავლო პლატფორმები, რუკები, კალენდრები და ანალიზის ინსტრუმენტები.', 'International learning platforms, maps, calendars and analysis tools.')
+                                }, void 0, false, {
+                                    fileName: "[project]/components/InnerPage.tsx",
+                                    lineNumber: 66,
+                                    columnNumber: 701
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "mt-6 inline-flex items-center gap-2 text-xs font-bold text-orange-600",
+                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'იხილეთ ქვემოთ →', 'See below →')
+                                }, void 0, false, {
+                                    fileName: "[project]/components/InnerPage.tsx",
+                                    lineNumber: 66,
+                                    columnNumber: 912
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/InnerPage.tsx",
+                            lineNumber: 66,
+                            columnNumber: 517
+                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#videos",
                             className: "card border-orange-200 bg-orange-50/40",
@@ -1240,48 +1283,133 @@ function Library({ lang, slug }) {
                                     className: "text-orange-600"
                                 }, void 0, false, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 64,
-                                    columnNumber: 586
+                                    lineNumber: 66,
+                                    columnNumber: 1121
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "mt-8 text-xl",
                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'ვიდეოები', 'Videos')
                                 }, void 0, false, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 64,
-                                    columnNumber: 621
+                                    lineNumber: 66,
+                                    columnNumber: 1156
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "mt-3 text-sm text-slate-500",
                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'სასწავლო ვიდეოები დამწყებთათვის, მასწავლებლებისა და მწვრთნელებისთვის.', 'Learning videos for beginners, teachers and coaches.')
                                 }, void 0, false, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 64,
-                                    columnNumber: 684
+                                    lineNumber: 66,
+                                    columnNumber: 1219
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "mt-6 inline-flex items-center gap-2 text-xs font-bold text-orange-600",
                                     children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'იხილეთ ქვემოთ →', 'See below →')
                                 }, void 0, false, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 64,
-                                    columnNumber: 867
+                                    lineNumber: 66,
+                                    columnNumber: 1402
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/InnerPage.tsx",
-                            lineNumber: 64,
-                            columnNumber: 517
+                            lineNumber: 66,
+                            columnNumber: 1052
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/InnerPage.tsx",
-                    lineNumber: 64,
+                    lineNumber: 66,
                     columnNumber: 7
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/InnerPage.tsx",
-                lineNumber: 63,
+                lineNumber: 65,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Section"], {
+                id: "links",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "eyebrow",
+                        children: "USEFUL LINKS"
+                    }, void 0, false, {
+                        fileName: "[project]/components/InnerPage.tsx",
+                        lineNumber: 69,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'სასარგებლო ბმულები', 'Useful links')
+                    }, void 0, false, {
+                        fileName: "[project]/components/InnerPage.tsx",
+                        lineNumber: 70,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-4 max-w-3xl text-slate-600",
+                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'შერჩეული საერთაშორისო რესურსები სწავლის, სკოლების, რუკების, შეჯიბრებებისა და მარშრუტის ანალიზისთვის.', 'Selected international resources for learning, schools, maps, events and route analysis.')
+                    }, void 0, false, {
+                        fileName: "[project]/components/InnerPage.tsx",
+                        lineNumber: 71,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4",
+                        children: featured.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(UsefulLinkCard, {
+                                lang: lang,
+                                link: link
+                            }, link.id, false, {
+                                fileName: "[project]/components/InnerPage.tsx",
+                                lineNumber: 72,
+                                columnNumber: 91
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/InnerPage.tsx",
+                        lineNumber: 72,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-16 grid gap-16",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usefulLinkGroups"].map((group)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "mb-6 text-2xl",
+                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, group.ka, group.en)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/InnerPage.tsx",
+                                        lineNumber: 73,
+                                        columnNumber: 91
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid gap-4 md:grid-cols-2",
+                                        children: group.links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(UsefulLinkCard, {
+                                                lang: lang,
+                                                link: link
+                                            }, link.id, false, {
+                                                fileName: "[project]/components/InnerPage.tsx",
+                                                lineNumber: 73,
+                                                columnNumber: 219
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/InnerPage.tsx",
+                                        lineNumber: 73,
+                                        columnNumber: 153
+                                    }, this)
+                                ]
+                            }, group.id, true, {
+                                fileName: "[project]/components/InnerPage.tsx",
+                                lineNumber: 73,
+                                columnNumber: 71
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/InnerPage.tsx",
+                        lineNumber: 73,
+                        columnNumber: 7
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/InnerPage.tsx",
+                lineNumber: 68,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Section$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Section"], {
@@ -1293,14 +1421,14 @@ function Library({ lang, slug }) {
                         children: "VIDEO LIBRARY"
                     }, void 0, false, {
                         fileName: "[project]/components/InnerPage.tsx",
-                        lineNumber: 67,
+                        lineNumber: 76,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'სასწავლო ვიდეოები', 'Learning videos')
                     }, void 0, false, {
                         fileName: "[project]/components/InnerPage.tsx",
-                        lineNumber: 68,
+                        lineNumber: 77,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1308,7 +1436,7 @@ function Library({ lang, slug }) {
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'ვიდეოები ინგლისურენოვანია. უმეტესობაზე შესაძლებელია YouTube-ის ავტომატური სუბტიტრებისა და თარგმანის ჩართვა.', 'The videos are in English. On most of them you can turn on YouTube automatic captions and translation.')
                     }, void 0, false, {
                         fileName: "[project]/components/InnerPage.tsx",
-                        lineNumber: 69,
+                        lineNumber: 78,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1320,7 +1448,7 @@ function Library({ lang, slug }) {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, group.ka, group.en)
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 79,
                                         columnNumber: 86
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1342,12 +1470,12 @@ function Library({ lang, slug }) {
                                                             loading: "lazy"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/InnerPage.tsx",
-                                                            lineNumber: 70,
+                                                            lineNumber: 79,
                                                             columnNumber: 580
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/InnerPage.tsx",
-                                                        lineNumber: 70,
+                                                        lineNumber: 79,
                                                         columnNumber: 541
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1358,7 +1486,7 @@ function Library({ lang, slug }) {
                                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, v.topicKa, v.topicEn)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                                lineNumber: 70,
+                                                                lineNumber: 79,
                                                                 columnNumber: 827
                                                             }, this),
                                                             v.orgKa && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1366,7 +1494,7 @@ function Library({ lang, slug }) {
                                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, v.orgKa, v.orgEn || v.orgKa)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                                lineNumber: 70,
+                                                                lineNumber: 79,
                                                                 columnNumber: 943
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1374,7 +1502,7 @@ function Library({ lang, slug }) {
                                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, v.titleKa, v.titleEn)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                                lineNumber: 70,
+                                                                lineNumber: 79,
                                                                 columnNumber: 1025
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1382,7 +1510,7 @@ function Library({ lang, slug }) {
                                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, v.descriptionKa, v.descriptionEn)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                                lineNumber: 70,
+                                                                lineNumber: 79,
                                                                 columnNumber: 1088
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1397,54 +1525,54 @@ function Library({ lang, slug }) {
                                                                         size: 16
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/InnerPage.tsx",
-                                                                        lineNumber: 70,
+                                                                        lineNumber: 79,
                                                                         columnNumber: 1362
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                                lineNumber: 70,
+                                                                lineNumber: 79,
                                                                 columnNumber: 1176
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/InnerPage.tsx",
-                                                        lineNumber: 70,
+                                                        lineNumber: 79,
                                                         columnNumber: 806
                                                     }, this)
                                                 ]
                                             }, v.id, true, {
                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 79,
                                                 columnNumber: 484
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 79,
                                         columnNumber: 148
                                     }, this)
                                 ]
                             }, group.id, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 70,
+                                lineNumber: 79,
                                 columnNumber: 66
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/InnerPage.tsx",
-                        lineNumber: 70,
+                        lineNumber: 79,
                         columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/InnerPage.tsx",
-                lineNumber: 66,
+                lineNumber: 75,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/InnerPage.tsx",
-        lineNumber: 62,
+        lineNumber: 64,
         columnNumber: 10
     }, this);
 }
@@ -1461,7 +1589,7 @@ function Contact({ lang }) {
                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'საკონტაქტო ინფორმაცია', 'Contact information')
                         }, void 0, false, {
                             fileName: "[project]/components/InnerPage.tsx",
-                            lineNumber: 74,
+                            lineNumber: 83,
                             columnNumber: 108
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -1474,20 +1602,20 @@ function Contact({ lang }) {
                                             children: "FEDERATION"
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 231
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
                                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია', 'Georgian National Orienteering Federation')
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 295
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 83,
                                     columnNumber: 226
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1497,7 +1625,7 @@ function Contact({ lang }) {
                                             children: "EMAIL"
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 423
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -1507,18 +1635,18 @@ function Contact({ lang }) {
                                                 children: "geoorgineeting@gmail.com"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 83,
                                                 columnNumber: 486
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 482
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 83,
                                     columnNumber: 418
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1528,7 +1656,7 @@ function Contact({ lang }) {
                                             children: "PHONE"
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 616
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -1538,18 +1666,18 @@ function Contact({ lang }) {
                                                 children: "+995 577 133 493"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 83,
                                                 columnNumber: 679
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 675
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 83,
                                     columnNumber: 611
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1559,7 +1687,7 @@ function Contact({ lang }) {
                                             children: "FACEBOOK"
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 792
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -1571,18 +1699,18 @@ function Contact({ lang }) {
                                                 children: "GeoOrienteering"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/InnerPage.tsx",
-                                                lineNumber: 74,
+                                                lineNumber: 83,
                                                 columnNumber: 858
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 854
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 83,
                                     columnNumber: 787
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1592,7 +1720,7 @@ function Contact({ lang }) {
                                             children: "ADDRESS"
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 1035
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -1600,25 +1728,25 @@ function Contact({ lang }) {
                                             children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'ნიკეას ქუჩა 72/59, ქუთაისი, საქართველო', '72/59 Nikea street, Kutaisi, Georgia')
                                         }, void 0, false, {
                                             fileName: "[project]/components/InnerPage.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 83,
                                             columnNumber: 1096
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/InnerPage.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 83,
                                     columnNumber: 1030
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/InnerPage.tsx",
-                            lineNumber: 74,
+                            lineNumber: 83,
                             columnNumber: 194
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/InnerPage.tsx",
-                    lineNumber: 74,
+                    lineNumber: 83,
                     columnNumber: 103
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1643,13 +1771,13 @@ function Contact({ lang }) {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 83,
                                         columnNumber: 1696
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 83,
                                 columnNumber: 1664
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1661,13 +1789,13 @@ function Contact({ lang }) {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 83,
                                         columnNumber: 1767
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 83,
                                 columnNumber: 1733
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1678,13 +1806,13 @@ function Contact({ lang }) {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 83,
                                         columnNumber: 1851
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 83,
                                 columnNumber: 1818
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1696,13 +1824,13 @@ function Contact({ lang }) {
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 83,
                                         columnNumber: 1931
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 83,
                                 columnNumber: 1891
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1715,13 +1843,13 @@ function Contact({ lang }) {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/components/InnerPage.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 83,
                                         columnNumber: 2067
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 83,
                                 columnNumber: 1983
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1729,33 +1857,89 @@ function Contact({ lang }) {
                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, 'ღილაკზე დაჭერით გაიხსნება თქვენი ელფოსტის პროგრამა შევსებული მონაცემებით.', 'Clicking the button will open your email application with the filled details.')
                             }, void 0, false, {
                                 fileName: "[project]/components/InnerPage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 83,
                                 columnNumber: 2099
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/InnerPage.tsx",
-                        lineNumber: 74,
+                        lineNumber: 83,
                         columnNumber: 1636
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/InnerPage.tsx",
-                    lineNumber: 74,
+                    lineNumber: 83,
                     columnNumber: 1238
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/InnerPage.tsx",
-            lineNumber: 74,
+            lineNumber: 83,
             columnNumber: 59
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/InnerPage.tsx",
-        lineNumber: 74,
+        lineNumber: 83,
         columnNumber: 50
     }, this);
 }
 _c6 = Contact;
+function UsefulLinkCard({ lang, link }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+        className: "card flex flex-col",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$earth$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe2$3e$__["Globe2"], {
+                className: "text-orange-600"
+            }, void 0, false, {
+                fileName: "[project]/components/InnerPage.tsx",
+                lineNumber: 84,
+                columnNumber: 118
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                className: "mt-6 text-xl",
+                children: link.title
+            }, void 0, false, {
+                fileName: "[project]/components/InnerPage.tsx",
+                lineNumber: 84,
+                columnNumber: 155
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "mt-3 flex-1 text-sm leading-relaxed text-slate-600",
+                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, link.descriptionKa, link.descriptionEn)
+            }, void 0, false, {
+                fileName: "[project]/components/InnerPage.tsx",
+                lineNumber: 84,
+                columnNumber: 201
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                className: "mt-5 inline-flex items-center gap-2 font-bold text-orange-600",
+                href: link.url,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: [
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["t"])(lang, link.ctaKa, link.ctaEn),
+                    " ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                        size: 16
+                    }, void 0, false, {
+                        fileName: "[project]/components/InnerPage.tsx",
+                        lineNumber: 84,
+                        columnNumber: 485
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/InnerPage.tsx",
+                lineNumber: 84,
+                columnNumber: 318
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/InnerPage.tsx",
+        lineNumber: 84,
+        columnNumber: 78
+    }, this);
+}
+_c7 = UsefulLinkCard;
 function Empty({ icon: I, title, text }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "mt-8 rounded-2xl border border-dashed border-slate-300 bg-[#f8faf8] p-10 text-center",
@@ -1765,7 +1949,7 @@ function Empty({ icon: I, title, text }) {
                 size: 42
             }, void 0, false, {
                 fileName: "[project]/components/InnerPage.tsx",
-                lineNumber: 75,
+                lineNumber: 85,
                 columnNumber: 193
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1773,7 +1957,7 @@ function Empty({ icon: I, title, text }) {
                 children: title
             }, void 0, false, {
                 fileName: "[project]/components/InnerPage.tsx",
-                lineNumber: 75,
+                lineNumber: 85,
                 columnNumber: 243
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1781,18 +1965,18 @@ function Empty({ icon: I, title, text }) {
                 children: text
             }, void 0, false, {
                 fileName: "[project]/components/InnerPage.tsx",
-                lineNumber: 75,
+                lineNumber: 85,
                 columnNumber: 284
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/InnerPage.tsx",
-        lineNumber: 75,
+        lineNumber: 85,
         columnNumber: 91
     }, this);
 }
-_c7 = Empty;
-var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
+_c8 = Empty;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
 __turbopack_context__.k.register(_c, "InnerPage");
 __turbopack_context__.k.register(_c1, "History");
 __turbopack_context__.k.register(_c2, "Learn");
@@ -1800,7 +1984,8 @@ __turbopack_context__.k.register(_c3, "Sport");
 __turbopack_context__.k.register(_c4, "Federation");
 __turbopack_context__.k.register(_c5, "Library");
 __turbopack_context__.k.register(_c6, "Contact");
-__turbopack_context__.k.register(_c7, "Empty");
+__turbopack_context__.k.register(_c7, "UsefulLinkCard");
+__turbopack_context__.k.register(_c8, "Empty");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
