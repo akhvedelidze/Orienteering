@@ -429,7 +429,9 @@ __turbopack_context__.s([
     "people",
     ()=>people,
     "t",
-    ()=>t
+    ()=>t,
+    "videoGroups",
+    ()=>videoGroups
 ]);
 const t = (l, ka, en)=>l === 'ka' ? ka : en;
 const federationLogo = '/images/geof-logo.png';
@@ -622,6 +624,190 @@ const lessons = [
         ],
         images: [],
         downloadableResources: []
+    }
+];
+const videoGroups = [
+    {
+        id: 'beginners',
+        ka: 'დამწყებთათვის',
+        en: 'For beginners',
+        videos: [
+            {
+                id: 'getting-started',
+                youtubeId: 'bUm2JUeFNh4',
+                titleKa: 'Getting Started — Get Out & Go Orienteering',
+                titleEn: 'Getting Started — Get Out & Go Orienteering',
+                topicKa: 'ორიენტირების პირველი ნაბიჯები',
+                topicEn: 'First steps in orienteering',
+                descriptionKa: 'განმარტავს რუკის ძირითად ელემენტებს, გავრცელებულ სიმბოლოებს, საკონტროლო პუნქტებსა და დისტანციის გავლის პრინციპს. კარგი პირველი ვიდეოა ადამიანისთვის, რომელსაც ორიენტირებასთან შეხება ჯერ არ ჰქონია.',
+                descriptionEn: 'Explains the main map elements, common symbols, control points and how a course is completed. A good first video for someone new to orienteering.'
+            },
+            {
+                id: 'newcomer-guide',
+                youtubeId: '26Zc5AVkFis',
+                titleKa: 'Start Orienteering — A Newcomer’s Guide',
+                titleEn: 'Start Orienteering — A Newcomer’s Guide',
+                topicKa: 'დამწყების გზამკვლევი',
+                topicEn: 'A newcomer’s guide',
+                descriptionKa: 'ორიენტირების ზოგადი მიმოხილვა — როგორ დავიწყოთ, რა აღჭურვილობა გვჭირდება და როგორ მიმდინარეობს პირველი დისტანცია.',
+                descriptionEn: 'A general overview of orienteering — how to start, what equipment you need and how a first course works.'
+            },
+            {
+                id: 'for-beginners',
+                youtubeId: 'dVTbPKldR4Y',
+                titleKa: 'Orienteering for Beginners',
+                titleEn: 'Orienteering for Beginners',
+                topicKa: 'ორიენტირების საფუძვლები',
+                topicEn: 'Orienteering basics',
+                descriptionKa: 'დამწყებთათვის განკუთვნილი ზოგადი გაკვეთილი, რომელიც აერთიანებს რუკის, მიმართულებისა და საკონტროლო პუნქტების მოძებნის საფუძვლებს.',
+                descriptionEn: 'A beginner lesson covering map reading, direction and finding control points.'
+            }
+        ]
+    },
+    {
+        id: 'map-reading',
+        ka: 'რუკის წაკითხვა',
+        en: 'Reading the map',
+        videos: [
+            {
+                id: 'how-to-read',
+                youtubeId: 'LPw8rLTCiG4',
+                orgKa: 'Orienteering Australia',
+                orgEn: 'Orienteering Australia',
+                titleKa: 'Orienteering — How to Read the Map',
+                titleEn: 'Orienteering — How to Read the Map',
+                topicKa: 'ორიენტირების რუკის წაკითხვა',
+                topicEn: 'How to read an orienteering map',
+                descriptionKa: 'განმარტავს, რატომ განსხვავდება ორიენტირების რუკა ჩვეულებრივი რუკისგან და როგორ გამოიყენება ფერები, სიმბოლოები და ტერიტორიის დეტალები.',
+                descriptionEn: 'Explains how an orienteering map differs from an ordinary map, and how colours, symbols and terrain detail are used.'
+            },
+            {
+                id: 'map-explained',
+                youtubeId: 'YSAE56aoQQc',
+                titleKa: 'Orienteering Map Explained',
+                titleEn: 'Orienteering Map Explained',
+                topicKa: 'რუკის ფერები, სიმბოლოები და ჰორიზონტალები',
+                topicEn: 'Map colours, symbols and contours',
+                descriptionKa: 'მოკლე ვიზუალური შესავალი ორიენტირების რუკასა და რელიეფის ჰორიზონტალებში. განსაკუთრებით სასარგებლოა მოსწავლეებისა და დამწყები მონაწილეებისთვის.',
+                descriptionEn: 'A short visual introduction to the orienteering map and terrain contours. Especially useful for students and beginners.'
+            }
+        ]
+    },
+    {
+        id: 'compass',
+        ka: 'კომპასი და რუკის ორიენტირება',
+        en: 'Compass and map orientation',
+        videos: [
+            {
+                id: 'use-compass',
+                youtubeId: 'Pgm6WI0n-K8',
+                orgKa: 'Orienteering Australia',
+                orgEn: 'Orienteering Australia',
+                titleKa: 'Orienteering — How to Use the Compass',
+                titleEn: 'Orienteering — How to Use the Compass',
+                topicKa: 'კომპასის გამოყენება',
+                topicEn: 'Using the compass',
+                descriptionKa: 'აჩვენებს კომპასის ძირითად ნაწილებს, რუკის ორიენტირებასა და მოძრაობის მიმართულების განსაზღვრას.',
+                descriptionEn: 'Shows the main parts of the compass, how to orient the map and how to set a direction of travel.'
+            },
+            {
+                id: 'orienting-map',
+                youtubeId: 'a2aGiUl1u4c',
+                titleKa: 'Orienting a Map and Compass',
+                titleEn: 'Orienting a Map and Compass',
+                topicKa: 'რუკის ორიენტირება და აზიმუტის აღება',
+                topicEn: 'Orienting the map and taking a bearing',
+                descriptionKa: 'ეტაპობრივად აჩვენებს, როგორ დავამთხვიოთ რუკა მაგნიტურ ჩრდილოეთს და როგორ ავიღოთ მიმართულება ორ წერტილს შორის.',
+                descriptionEn: 'Step by step: how to align the map with magnetic north and take a bearing between two points.'
+            },
+            {
+                id: 'hector-haines',
+                youtubeId: 'PnvuEQXKa_o',
+                orgKa: 'Think Fast, Run Hard, Go Orienteering',
+                orgEn: 'Think Fast, Run Hard, Go Orienteering',
+                titleKa: 'Using the Compass — Hector Haines',
+                titleEn: 'Using the Compass — Hector Haines',
+                topicKa: 'სირბილისას მიმართულების შენარჩუნება',
+                topicEn: 'Holding direction while running',
+                descriptionKa: 'გამოცდილი სპორტსმენი აჩვენებს, როგორ გამოიყენოს მონაწილემ კომპასი მოძრაობისას და როგორ შეინარჩუნოს სწორი მიმართულება ტყეში.',
+                descriptionEn: 'An experienced athlete shows how to use the compass on the move and keep a correct direction in the forest.'
+            },
+            {
+                id: 'charlotte-ward',
+                youtubeId: '2LZpOZI94bU',
+                orgKa: 'Think Fast, Run Hard, Go Orienteering',
+                orgEn: 'Think Fast, Run Hard, Go Orienteering',
+                titleKa: 'Setting the Map — Charlotte Ward',
+                titleEn: 'Setting the Map — Charlotte Ward',
+                topicKa: 'რუკის სწორად დაჭერა და ორიენტირება',
+                topicEn: 'Holding and setting the map',
+                descriptionKa: 'პრაქტიკული დემონსტრაცია, როგორ მოვაბრუნოთ რუკა კომპასისა და გარემოს შესაბამისად და როგორ შევინარჩუნოთ რუკასთან მუდმივი კონტაქტი.',
+                descriptionEn: 'A practical demonstration of turning the map to match the compass and terrain, and keeping constant contact with the map.'
+            },
+            {
+                id: 'compass-tutorial',
+                youtubeId: 'WohhHM3vVME',
+                titleKa: 'Orienteering Compass Tutorial',
+                titleEn: 'Orienteering Compass Tutorial',
+                topicKa: 'კომპასის გამოყენება დამწყებთათვის',
+                topicEn: 'Compass use for beginners',
+                descriptionKa: 'მარტივი, ეტაპობრივი გაკვეთილი ორიენტირების კომპასის გამოყენების შესახებ.',
+                descriptionEn: 'A simple, step-by-step tutorial on using an orienteering compass.'
+            }
+        ]
+    },
+    {
+        id: 'route-choice',
+        ka: 'მარშრუტის შერჩევა',
+        en: 'Route choice',
+        videos: [
+            {
+                id: 'route-choice',
+                youtubeId: '-wNfknn_-9k',
+                titleKa: 'Orienteering — Route Choice',
+                titleEn: 'Orienteering — Route Choice',
+                topicKa: 'საუკეთესო მარშრუტის არჩევა',
+                topicEn: 'Choosing the best route',
+                descriptionKa: 'განიხილავს მარშრუტის არჩევის ძირითად ფაქტორებს — მანძილს, რელიეფს, ბილიკებს, მცენარეულობას, ნავიგაციის სირთულესა და შეცდომის რისკს.',
+                descriptionEn: 'Looks at the main factors in route choice: distance, terrain, paths, vegetation, navigation difficulty and the risk of error.'
+            }
+        ]
+    },
+    {
+        id: 'schools',
+        ka: 'სკოლებისა და მასწავლებლებისთვის',
+        en: 'For schools and teachers',
+        videos: [
+            {
+                id: 'school-playlist',
+                playlistId: 'PLjECyHDRqfzWwPov4Txx5XtXReOKx3Lfd',
+                orgKa: 'International Orienteering Federation და Enrich Education',
+                orgEn: 'International Orienteering Federation and Enrich Education',
+                titleKa: 'School Orienteering — ვიდეოების კრებული',
+                titleEn: 'School Orienteering — video collection',
+                topicKa: 'სასკოლო ორიენტირება',
+                topicEn: 'School orienteering',
+                descriptionKa: 'ვიდეოების კრებული მასწავლებლების, მწვრთნელებისა და სასკოლო პროგრამების ორგანიზატორებისთვის. მოიცავს ორიენტირების სასწავლო აქტივობებსა და გარე სწავლების მეთოდებს.',
+                descriptionEn: 'A video collection for teachers, coaches and school programme organisers. Includes orienteering learning activities and outdoor teaching methods.'
+            }
+        ]
+    },
+    {
+        id: 'organisers',
+        ka: 'ორგანიზატორებისა და მწვრთნელებისთვის',
+        en: 'For organisers and coaches',
+        videos: [
+            {
+                id: 'purple-pen',
+                youtubeId: 'PRMByZhgspI',
+                titleKa: 'Purple Pen Tutorial',
+                titleEn: 'Purple Pen Tutorial',
+                topicKa: 'ორიენტირების დისტანციის დაგეგმვა',
+                topicEn: 'Planning an orienteering course',
+                descriptionKa: 'აჩვენებს, როგორ შეიქმნას ორიენტირების დისტანცია Purple Pen-ის უფასო პროგრამაში, როგორ დაემატოს საკონტროლო პუნქტები და მომზადდეს კონტროლის აღწერები.',
+                descriptionEn: 'Shows how to create an orienteering course in the free Purple Pen software, add controls and prepare control descriptions.'
+            }
+        ]
     }
 ];
 }),

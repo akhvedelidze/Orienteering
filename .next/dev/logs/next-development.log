@@ -1,89 +1,270 @@
-{"timestamp":"00:00:04.030","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:04.031","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
-{"timestamp":"00:00:04.031","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
-{"timestamp":"00:00:04.032","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
-{"timestamp":"00:00:04.032","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:04.032","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
-{"timestamp":"00:00:04.033","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
-{"timestamp":"00:00:04.033","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:04.970","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:08.019","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:10.261","source":"Server","level":"ERROR","message":"Node.js fs rename failed after 101 retries with error Error: EPERM: operation not permitted, rename 'C:\\Demo\\Orienteering\\Orienteering\\.next\\dev\\build-manifest.json.tmp.6ty16utvgco' -> 'C:\\Demo\\Orienteering\\Orienteering\\.next\\dev\\build-manifest.json'"}
-{"timestamp":"00:00:10.297","source":"Server","level":"ERROR","message":"⨯ Error: EPERM: operation not permitted, rename 'C:\\Demo\\Orienteering\\Orienteering\\.next\\dev\\build-manifest.json.tmp.6ty16utvgco' -> 'C:\\Demo\\Orienteering\\Orienteering\\.next\\dev\\build-manifest.json'"}
-{"timestamp":"00:00:12.303","source":"Server","level":"ERROR","message":"⨯ Error: Invariant: missing bootstrap script. This is a bug in Next.js"}
-{"timestamp":"00:00:12.307","source":"Server","level":"ERROR","message":"⨯ Error: Invariant: missing bootstrap script. This is a bug in Next.js"}
-{"timestamp":"00:00:12.340","source":"Server","level":"ERROR","message":"⨯ Error: Invariant: missing bootstrap script. This is a bug in Next.js"}
-{"timestamp":"00:00:12.344","source":"Server","level":"ERROR","message":"⨯ Error: Invariant: missing bootstrap script. This is a bug in Next.js"}
-{"timestamp":"00:00:13.370","source":"Server","level":"LOG","message":"○ Compiling /_error ..."}
-{"timestamp":"00:00:13.546","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:18.264","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:20.908","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:00:29.670","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
-{"timestamp":"00:00:29.980","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
-{"timestamp":"00:00:31.084","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:00:31.086","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:01:14.120","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:01:14.122","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:04:49.697","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:04:49.699","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:10.807","source":"Server","level":"LOG","message":"✓ Compiled in 181ms"}
-{"timestamp":"00:23:10.872","source":"Browser","level":"ERROR","message":"Uncaught TypeError: Illegal constructor\n    at Header (components/Header.tsx:3:455)\n    at Layout (app\\layout.tsx:3:118)\n  \u001b[90m1 |\u001b[0m ...\n  \u001b[90m2 |\u001b[0m ...\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m3 |\u001b[0m ...\u001b[32m rounded-full border-2 border-orange-500\"\u001b[0m><\u001b[33mNavigation\u001b[0m size={\u001b[35m21\u001b[0m}\u001b[35m/></span\u001b[0m><span classN...\n  \u001b[90m  |\u001b[0m                                              \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m4 |\u001b[0m ..."}
-{"timestamp":"00:23:10.873","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught TypeError: Illegal constructor\\u001b[39m\\n\\u001b[31m    at Header (components/Header.tsx:3:455)\\n    at Layout (app\\\\layout.tsx:3:118)\\u001b[39m\\n  \\u001b[90m1 |\\u001b[0m ...\\n  \\u001b[90m2 |\\u001b[0m ...\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m3 |\\u001b[0m ...\\u001b[32m rounded-full border-2 border-orange-500\\\"\\u001b[0m><\\u001b[33mNavigation\\u001b[0m size={\\u001b[35m21\\u001b[0m}\\u001b[35m/></span\\u001b[0m><span classN...\\n  \\u001b[90m  |\\u001b[0m                                              \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m4 |\\u001b[0m ...\""}
-{"timestamp":"00:23:11.916","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
-{"timestamp":"00:23:11.927","source":"Server","level":"LOG","message":"✓ Compiled in 225ms"}
-{"timestamp":"00:23:12.061","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
-{"timestamp":"00:23:12.561","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:23:13.311","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:23:13.313","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:13.313","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:23:13.314","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:13.315","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:23:13.316","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:13.317","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:23:13.319","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:13.323","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:13.991","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:23:14.852","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:23:14.853","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:14.854","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:23:14.855","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:23:35.140","source":"Server","level":"LOG","message":"✓ Compiled in 216ms"}
-{"timestamp":"00:24:02.404","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:24:03.060","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:24:03.062","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:31:23.952","source":"Server","level":"LOG","message":"✓ Compiled in 40ms"}
-{"timestamp":"00:31:24.682","source":"Server","level":"LOG","message":"✓ Compiled in 55ms"}
-{"timestamp":"00:31:25.991","source":"Server","level":"LOG","message":"✓ Compiled in 95ms"}
-{"timestamp":"00:31:27.000","source":"Browser","level":"ERROR","message":"Uncaught TypeError: Failed to construct 'Image': Please use the 'new' operator, this DOM object constructor cannot be called as a function.\n    at Home (app/page.tsx:5:1395)\n  \u001b[90m3 |\u001b[0m ...\n  \u001b[90m4 |\u001b[0m ...\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m5 |\u001b[0m ...\u001b[32ming\"\u001b[0m>{t(lang,\u001b[32m'გაიგე მეტი ორიენტირების შესახებ'\u001b[0m,'Discover orienteering')} <ArrowRight...\n  \u001b[90m  |\u001b[0m                            \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m6 |\u001b[0m ...\n  \u001b[90m7 |\u001b[0m ...\u001b[32mssName=\"\u001b[0mbtn btn-primary mt-\u001b[35m8\u001b[0m\u001b[32m\" href=\"\u001b[0m/history\u001b[32m\">{t(lang,'იხილეთ ისტორ\u001b[0mია','Explore the ...\n  \u001b[90m8 |\u001b[0m ..."}
-{"timestamp":"00:31:27.002","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught TypeError: Failed to construct 'Image': Please use the 'new' operator, this DOM object constructor cannot be called as a function.\\u001b[39m\\n\\u001b[31m    at Home (app/page.tsx:5:1395)\\u001b[39m\\n  \\u001b[90m3 |\\u001b[0m ...\\n  \\u001b[90m4 |\\u001b[0m ...\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m5 |\\u001b[0m ...\\u001b[32ming\\\"\\u001b[0m>{t(lang,\\u001b[32m'გაიგე მეტი ორიენტირების შესახებ'\\u001b[0m,'Discover orienteering')} <ArrowRight...\\n  \\u001b[90m  |\\u001b[0m                            \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m6 |\\u001b[0m ...\\n  \\u001b[90m7 |\\u001b[0m ...\\u001b[32mssName=\\\"\\u001b[0mbtn btn-primary mt-\\u001b[35m8\\u001b[0m\\u001b[32m\\\" href=\\\"\\u001b[0m/history\\u001b[32m\\\">{t(lang,'იხილეთ ისტორ\\u001b[0mია','Explore the ...\\n  \\u001b[90m8 |\\u001b[0m ...\""}
-{"timestamp":"00:31:29.505","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
-{"timestamp":"00:31:29.565","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
-{"timestamp":"00:31:29.576","source":"Server","level":"LOG","message":"✓ Compiled in 82ms"}
-{"timestamp":"00:31:29.796","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:31:29.973","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:31:31.028","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:31:31.030","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:51:16.226","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
-{"timestamp":"00:51:16.355","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
-{"timestamp":"00:51:17.548","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:51:17.549","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:51:52.144","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:51:52.146","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:57:02.437","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:57:41.345","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:57:41.347","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:58:18.357","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:58:18.358","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:58:25.520","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:58:25.521","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:58:29.768","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:58:31.375","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:58:31.376","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:58:32.887","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"00:58:34.548","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"00:58:34.549","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"01:00:56.241","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"01:00:56.242","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"01:00:59.457","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
-{"timestamp":"01:00:59.458","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
-{"timestamp":"01:01:03.640","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:00:41.865","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:44.952","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:58.023","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:58.368","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:59.077","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:00.747","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:01:10.176","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:11.635","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:01:11.639","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:03:51.145","source":"Server","level":"LOG","message":"✓ Compiled in 182ms"}
+{"timestamp":"00:05:40.962","source":"Server","level":"LOG","message":"✓ Compiled in 155ms"}
+{"timestamp":"00:06:15.511","source":"Server","level":"LOG","message":"✓ Compiled in 194ms"}
+{"timestamp":"00:06:33.083","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:06:34.320","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:06:34.321","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:08:10.536","source":"Server","level":"LOG","message":"✓ Compiled in 138ms"}
+{"timestamp":"00:08:48.109","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:08:49.185","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:08:49.187","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:09:20.420","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:09:20.518","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:09:21.735","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:09:21.738","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:09:48.407","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:09:48.409","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:09:59.330","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:09:59.332","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:10:03.886","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:10:03.889","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:19:04.534","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:19:04.537","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:19:04.538","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:19:04.540","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:19:16.599","source":"Server","level":"LOG","message":"✓ Compiled in 407ms"}
+{"timestamp":"00:19:31.348","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:19:31.350","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:19:34.580","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:19:36.252","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:20:03.914","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:20:03.917","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:20:05.226","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:20:05.229","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:20:10.758","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:23:04.093","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:23:04.095","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:25:00.538","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:25:00.541","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:25:07.422","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:29:49.748","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:29:51.437","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:29:51.440","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:30:21.659","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:30:26.507","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:30:26.510","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:33:58.779","source":"Server","level":"LOG","message":"✓ Compiled in 260ms"}
+{"timestamp":"00:34:28.142","source":"Server","level":"LOG","message":"✓ Compiled in 181ms"}
+{"timestamp":"00:34:34.221","source":"Server","level":"LOG","message":"✓ Compiled in 173ms"}
+{"timestamp":"00:34:46.522","source":"Server","level":"LOG","message":"✓ Compiled in 197ms"}
+{"timestamp":"00:34:48.753","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:34:48.755","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:34:52.218","source":"Server","level":"LOG","message":"✓ Compiled in 215ms"}
+{"timestamp":"00:35:14.147","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:35:15.394","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:35:15.397","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:35:16.198","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:35:16.200","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:35:17.785","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:35:17.787","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:35:29.822","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:35:29.824","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:35:37.678","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:35:37.681","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:35:44.858","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:35:44.860","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:36:11.003","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:36:11.004","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:36:54.453","source":"Server","level":"LOG","message":"✓ Compiled in 162ms"}
+{"timestamp":"00:37:02.437","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:37:02.439","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:37:06.907","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:37:06.909","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:37:10.610","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:37:10.612","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:41:56.873","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:41:56.875","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:42:13.949","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:42:13.951","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:42:26.961","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:42:28.660","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:42:28.662","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:42:46.391","source":"Server","level":"LOG","message":"✓ Compiled in 107ms"}
+{"timestamp":"00:43:04.254","source":"Server","level":"LOG","message":"✓ Compiled in 212ms"}
+{"timestamp":"00:43:13.914","source":"Server","level":"LOG","message":"✓ Compiled in 107ms"}
+{"timestamp":"00:43:52.936","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:45:17.297","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:45:17.301","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:45:19.033","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:45:19.034","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:45:26.514","source":"Server","level":"LOG","message":"✓ Compiled in 240ms"}
+{"timestamp":"00:45:27.881","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:45:27.884","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:45:27.885","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:45:27.887","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:45:52.652","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:45:52.654","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:46:05.210","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:46:05.213","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:46:09.243","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:46:09.245","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:46:12.675","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:46:12.677","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:46:14.705","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:46:14.706","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:46:16.021","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:46:16.023","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"00:49:33.453","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:49:33.455","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:50:23.741","source":"Server","level":"LOG","message":"✓ Compiled in 106ms"}
+{"timestamp":"00:50:24.048","source":"Browser","level":"ERROR","message":"Each child in a list should have a unique \"key\" prop.\n\nCheck the render method of `Sport`. See https://react.dev/link/warning-keys for more information. \n    at Set.forEach (<anonymous>) (<anonymous>)"}
+{"timestamp":"00:50:24.050","source":"Server","level":"ERROR","message":"[browser] \"Each child in a list should have a unique \\\"key\\\" prop.\\n\\nCheck the render method of `Sport`. See https://react.dev/link/warning-keys for more information.\" \"\\n\\u001b[31m    at Set.forEach (<anonymous>)\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"00:50:24.725","source":"Server","level":"LOG","message":"✓ Compiled in 68ms"}
+{"timestamp":"00:51:32.883","source":"Browser","level":"ERROR","message":"Each child in a list should have a unique \"key\" prop.\n\nCheck the render method of `Sport`. See https://react.dev/link/warning-keys for more information. \n    at Set.forEach (<anonymous>) (<anonymous>)"}
+{"timestamp":"00:51:32.885","source":"Server","level":"ERROR","message":"[browser] \"Each child in a list should have a unique \\\"key\\\" prop.\\n\\nCheck the render method of `Sport`. See https://react.dev/link/warning-keys for more information.\" \"\\n\\u001b[31m    at Set.forEach (<anonymous>)\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"00:59:34.135","source":"Server","level":"LOG","message":"✓ Compiled in 258ms"}
+{"timestamp":"00:59:34.823","source":"Server","level":"LOG","message":"✓ Compiled in 123ms"}
+{"timestamp":"00:59:55.127","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:59:56.314","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"00:59:56.317","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:02:59.396","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:03:00.621","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:03:00.624","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:04:01.249","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"01:04:01.250","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"01:04:02.813","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:04:02.815","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:05:57.629","source":"Server","level":"LOG","message":"✓ Compiled in 123ms"}
+{"timestamp":"01:06:25.220","source":"Server","level":"LOG","message":"✓ Compiled in 218ms"}
+{"timestamp":"01:06:33.805","source":"Server","level":"LOG","message":"✓ Compiled in 209ms"}
+{"timestamp":"01:06:34.902","source":"Server","level":"LOG","message":"✓ Compiled in 252ms"}
+{"timestamp":"01:06:58.562","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:06:58.564","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:12:41.899","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:12:42.349","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:12:42.350","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:12:55.194","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"01:12:55.195","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"01:12:55.653","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:12:55.655","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:13:00.824","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:13:00.825","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:14:07.232","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:14:07.233","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:14:22.779","source":"Server","level":"LOG","message":"✓ Compiled in 147ms"}
+{"timestamp":"01:14:51.268","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:14:51.733","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:14:51.734","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:18:52.928","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:18:54.130","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:18:54.133","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:19:05.209","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:19:06.285","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:19:06.286","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:19:12.786","source":"Server","level":"LOG","message":"✓ Compiled in 55ms"}
+{"timestamp":"01:19:21.083","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:19:26.312","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:19:26.315","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:01.059","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"01:20:01.085","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"01:20:02.437","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:10.915","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:20:12.185","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:19.646","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"01:20:19.648","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"01:20:20.797","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:20.799","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:36.529","source":"Server","level":"ERROR","message":"⨯ Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:39.398","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:39.400","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:39.401","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:39.403","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:42.262","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:42.264","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:51.580","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:51.582","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:54.028","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:54.030","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:56.423","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:56.425","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:57.758","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:57.760","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:57.761","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:57.763","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:20:59.214","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:20:59.216","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:01.938","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:01.940","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:01.940","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:01.943","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:04.292","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:04.294","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:06.067","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:06.069","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:06.070","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:06.073","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:07.642","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:07.644","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:09.022","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:09.024","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:09.025","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:09.028","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:11.485","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:11.487","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:21:18.747","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:21:18.749","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:39:23.641","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:39:25.773","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:39:26.821","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:39:28.319","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:39:44.123","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:39:44.127","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:39:44.129","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:39:44.132","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:39:44.134","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:39:44.137","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:39:44.139","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:39:44.141","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:40:40.934","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:40:41.762","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:40:41.763","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:40:50.073","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"01:40:50.077","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"01:40:51.285","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:40:51.286","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:40:58.347","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:40:58.348","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:41:04.133","source":"Server","level":"LOG","message":"✓ Compiled in 310ms"}
+{"timestamp":"01:41:16.624","source":"Server","level":"LOG","message":"✓ Compiled in 241ms"}
+{"timestamp":"01:41:58.885","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:41:58.886","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:13.006","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:13.009","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:14.289","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:14.291","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:14.292","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:14.294","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:15.390","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:15.393","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:26.755","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:26.757","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:37.584","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:37.589","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:43.714","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:43.717","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:43.718","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:43.719","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:47.015","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:47.017","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:52.188","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:52.190","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:53.359","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:53.361","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:42:55.388","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:42:55.390","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:44:32.021","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:44:32.024","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:46:56.031","source":"Server","level":"LOG","message":"✓ Compiled in 245ms"}
+{"timestamp":"01:47:06.311","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:47:07.411","source":"Server","level":"ERROR","message":"⨯ Failed to generate static paths for /[...slug]:"}
+{"timestamp":"01:47:07.413","source":"Server","level":"ERROR","message":"Error: Page \"/[...slug]/page\" is missing param \"/[...slug]\" in \"generateStaticParams()\", which is required with \"output: export\" config."}
+{"timestamp":"01:47:18.695","source":"Server","level":"LOG","message":"✓ Compiled in 222ms"}
