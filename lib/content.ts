@@ -1,12 +1,35 @@
 import {Activity, HistoryEntry, HistoricalMap, HistoricalPerson, LearningLesson, NewsArticle, VideoResource, UsefulLink} from './types';
 export type Lang='ka'|'en'; export const t=(l:Lang,ka:string,en:string)=>l==='ka'?ka:en;
 export const federationLogo='/images/geof-logo.png';
-export const nav=[['/','მთავარი','Home'],['/federation','ფედერაცია','Federation'],['/history','ისტორია','History'],['/orienteering','ორიენტირება','Orienteering'],['/learn','სწავლა','Learn'],['/activities','აქტივობები','Activities'],['/news','სიახლეები','News'],['/resources','რესურსები','Resources'],['/contact','კონტაქტი','Contact']];
+export const nav=[['/','მთავარი','Home'],['/federation','ფედერაცია','Federation'],['/history','ისტორია','History'],['/orienteering','სწავლა','Learn'],['/news','სიახლეები და აქტივობები','News and activities'],['/resources','რესურსები','Resources'],['/contact','კონტაქტი','Contact']];
 // FACTUAL PLACEHOLDERS: no unverified names, dates, results or affiliations are published.
 export const history:HistoryEntry[]=[
- {id:'beginnings',titleKa:'სპორტული ორიენტირების დასაწყისი საქართველოში',titleEn:'The beginnings of orienteering in Georgia',descriptionKa:'მასალა დამუშავების პროცესშია — პერიოდი, წყაროები და მონაწილეთა მოგონებები დაემატება მხოლოდ გადამოწმების შემდეგ.',descriptionEn:'Research in progress — dates, sources and recollections will be added only after verification.',images:[],people:[],documents:[],maps:[],source:[],verified:false},
- {id:'new-stage',titleKa:'სპორტის აღდგენა და ახალი ეტაპი',titleEn:'Revival and a new chapter',descriptionKa:'ფედერაცია აგროვებს დოკუმენტურ მასალას და ქმნის ახალ საგანმანათლებლო სივრცეს. დეტალური ქრონოლოგია გამოქვეყნდება წყაროების დადასტურების შემდეგ.',descriptionEn:'The federation is collecting documentary material and building a new educational space. A detailed chronology will follow source verification.',images:[],people:[],documents:[],maps:[],source:[],verified:false}];
-export const maps:HistoricalMap[]=[]; export const people:HistoricalPerson[]=[]; export const activities:Activity[]=[]; export const news:NewsArticle[]=[];
+ {id:'beginnings',titleKa:'სპორტული ორიენტირების დასაწყისი საქართველოში',titleEn:'The beginnings of orienteering in Georgia',descriptionKa:'ინფორმაციები მზადების პროცესშია',descriptionEn:'Information is being prepared.',images:[],people:[],documents:[],maps:[],source:[],verified:false},
+ {id:'new-stage',titleKa:'სპორტის აღდგენა და ახალი ეტაპი',titleEn:'Revival and a new chapter',descriptionKa:'ინფორმაციები მზადების პროცესშია',descriptionEn:'Information is being prepared.',images:[],people:[],documents:[],maps:[],source:[],verified:false}];
+export const maps:HistoricalMap[]=[]; export const people:HistoricalPerson[]=[]; export const activities:Activity[]=[];
+export const guidePublication={
+ cover:'/images/Publication/Cover.png',
+ pdf:'/images/Publication/guide.pdf',
+ titleKa:'სპორტული ორიენტირება — სასწავლო გზამკვლევი',
+ titleEn:'Sport Orienteering — A Learning Guide',
+ dateKa:'სექტემბერი 2026',
+ dateEn:'September 2026'
+};
+export const news:NewsArticle[]=[
+ {id:'guide-2026',slug:'saswavlo-gzamkvlevi',category:'publication',publishedAt:'2026-09',image:guidePublication.cover,
+  titleKa:'გამოიცა სპორტული ორიენტირების სასწავლო გზამკვლევი',
+  titleEn:'A learning guide to sport orienteering has been published',
+  summaryKa:'საქართველოს სპორტული ორიენტირების ეროვნულმა ფედერაციამ 2026 წლის სექტემბერში გამოსცა გზამკვლევი ქართულ ენაზე სპორტული ორიენტირების სასწავლად.',
+  summaryEn:'In September 2026 the Georgian National Orienteering Federation published a Georgian-language guide for learning sport orienteering.',
+  contentKa:[
+   'გამოცემა განკუთვნილია სკოლის მოსწავლეების, სპორტის მასწავლებლების, სტუდენტებისა და ყველა დაინტერესებული პირისთვის.'
+  ],
+  contentEn:[
+   'The publication is intended for school pupils, physical education teachers, students and anyone interested in the sport.'
+  ]}
+];
+export const archivePhotos=Array.from({length:75},(_,i)=>i+1).filter(n=>n!==36&&n!==53&&n!==71).map(n=>`/images/History/${n}.jpg`);
+export const highlightPhotos=['1','2','5','7','9','10','11','17','64','67','69','70','74'].map(n=>`/images/Highlite/${n}.jpg`);
 export const lessons:LearningLesson[]=[
  {id:'first',slug:'first-steps',level:1,order:1,titleKa:'პირველი ნაბიჯები',titleEn:'First steps',summaryKa:'გაიგე რუკის, სტარტის, ფინიშისა და საკონტროლო პუნქტის არსი.',summaryEn:'Meet the map, start, finish and control point.',contentKa:['რა არის რუკა?','რუკის ორიენტირება','მარტივი მარშრუტი'],contentEn:['What is a map?','Orienting the map','A simple route'],images:[],downloadableResources:[]},
  {id:'map',slug:'map',level:2,order:2,titleKa:'რუკის კითხვა',titleEn:'Reading the map',summaryKa:'ფერები, პირობითი ნიშნები, რელიეფი და მასშტაბი.',summaryEn:'Colours, symbols, terrain and scale.',contentKa:['რუკის ფერები','ჰორიზონტალები','ბილიკები და რელიეფი'],contentEn:['Map colours','Contour lines','Paths and terrain'],images:[],downloadableResources:[]},
