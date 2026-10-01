@@ -1,5 +1,17 @@
 export interface SourceReference { type:'document'|'article'|'photograph'|'interview'|'federation-archive'|'external-archive'|'publication'; title:string; url?:string }
 export interface HistoryEntry { id:string; year?:string; yearEnd?:string; titleKa:string; titleEn:string; descriptionKa:string; descriptionEn:string; images:string[]; people:string[]; documents:string[]; maps:string[]; source:SourceReference[]; verified:boolean }
+export type HistoryEssayBlock =
+  | {type:'p';ka:string;en:string}
+  | {type:'list';items:{ka:string;en:string}[]}
+  | {type:'names';ka:string;en:string};
+export interface HistoryEssayChapter {
+  id:string;
+  year?:string;
+  titleKa:string;
+  titleEn:string;
+  closing?:boolean;
+  blocks:HistoryEssayBlock[];
+}
 export interface HistoricalPerson { id:string; nameKa:string; nameEn:string; photo?:string; roleKa:string; roleEn:string; period?:string; biographyKa:string; biographyEn:string; achievements:string[]; sources:SourceReference[] }
 export interface HistoricalMap { id:string; titleKa:string; titleEn:string; year?:string; location?:string; cartographer?:string; event?:string; image?:string; descriptionKa:string; descriptionEn:string }
 export interface Activity { id:string; slug:string; titleKa:string; titleEn:string; date?:string; locationKa?:string; locationEn?:string; category:string; status:'planned'|'ongoing'|'completed'; image?:string; descriptionKa:string; descriptionEn:string }

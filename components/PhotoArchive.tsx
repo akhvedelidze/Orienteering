@@ -8,6 +8,17 @@ export function PhotoArchive({lang}:{lang:'ka'|'en'}){
   const caption=t(lang,'არქივის ფოტო','Archive photo');
 
   useEffect(()=>{
+    if(typeof window==='undefined')return;
+    const toPhotos=()=>{
+      if(window.location.hash!=='#photos')return;
+      document.getElementById('photos')?.scrollIntoView({behavior:'smooth',block:'start'});
+    };
+    toPhotos();
+    window.addEventListener('hashchange',toPhotos);
+    return()=>window.removeEventListener('hashchange',toPhotos);
+  },[]);
+
+  useEffect(()=>{
     if(open===null)return;
     const onKey=(e:KeyboardEvent)=>{
       if(e.key==='Escape')setOpen(null);
@@ -19,7 +30,7 @@ export function PhotoArchive({lang}:{lang:'ka'|'en'}){
   },[open]);
 
   return (
-    <section id="photos" className="bg-[#f5f3eb] pb-16 pt-8 md:pb-20 md:pt-10">
+    <section id="photos" className="scroll-mt-36 bg-[#f5f3eb] pb-16 pt-8 md:scroll-mt-40 md:pb-20 md:pt-10">
       <div className="container">
         <p className="eyebrow">PHOTO ARCHIVE</p>
         <h2>{t(lang,'ფოტოარქივი','Photo archive')}</h2>

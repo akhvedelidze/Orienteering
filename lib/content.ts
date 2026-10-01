@@ -1,11 +1,86 @@
-import {Activity, HistoryEntry, HistoricalMap, HistoricalPerson, LearningLesson, NewsArticle, VideoResource, UsefulLink} from './types';
+import {Activity, HistoryEntry, HistoryEssayChapter, HistoricalMap, HistoricalPerson, LearningLesson, NewsArticle, VideoResource, UsefulLink} from './types';
 export type Lang='ka'|'en'; export const t=(l:Lang,ka:string,en:string)=>l==='ka'?ka:en;
 export const federationLogo='/images/geof-logo.png';
 export const nav=[['/','მთავარი','Home'],['/federation','ფედერაცია','Federation'],['/history','ისტორია','History'],['/orienteering','სწავლა','Learn'],['/news','სიახლეები და აქტივობები','News and activities'],['/resources','რესურსები','Resources'],['/contact','კონტაქტი','Contact']];
-// FACTUAL PLACEHOLDERS: no unverified names, dates, results or affiliations are published.
+// History essay content is published from verified federation narrative. Placeholder entries remain only for unfinished archive sections.
 export const history:HistoryEntry[]=[
  {id:'beginnings',titleKa:'სპორტული ორიენტირების დასაწყისი საქართველოში',titleEn:'The beginnings of orienteering in Georgia',descriptionKa:'ინფორმაციები მზადების პროცესშია',descriptionEn:'Information is being prepared.',images:[],people:[],documents:[],maps:[],source:[],verified:false},
  {id:'new-stage',titleKa:'სპორტის აღდგენა და ახალი ეტაპი',titleEn:'Revival and a new chapter',descriptionKa:'ინფორმაციები მზადების პროცესშია',descriptionEn:'Information is being prepared.',images:[],people:[],documents:[],maps:[],source:[],verified:false}];
+export const historyLead={
+ ka:'სპორტული ორიენტირება სპორტის გამორჩეული სახეობაა, რომელიც აერთიანებს ფიზიკურ მომზადებას, სწრაფ აზროვნებას, სივრცით ორიენტაციასა და დამოუკიდებლად გადაწყვეტილების მიღების უნარს. სპორტსმენის მიზანია უცნობ ტერიტორიაზე, სპეციალური რუკისა და კომპასის დახმარებით, განსაზღვრული თანმიმდევრობით გაიაროს საკონტროლო პუნქტები და დისტანცია რაც შეიძლება სწრაფად და ზუსტად დაასრულოს.',
+ en:'Sport orienteering is a distinctive sport that combines physical fitness, quick thinking, spatial orientation and independent decision-making. The athlete’s aim is to visit control points in a set order on unfamiliar terrain, using a specialised map and compass, and to finish the course as quickly and accurately as possible.'
+};
+export const historyEssay:HistoryEssayChapter[]=[
+ {
+  id:'beginnings',
+  titleKa:'სპორტული ორიენტირების დასაწყისი',
+  titleEn:'The beginnings of sport orienteering',
+  blocks:[
+   {type:'p',ka:'სპორტული ორიენტირების სამშობლოდ სკანდინავია ითვლება. პირველი ცნობილი საჯარო შეჯიბრებები XIX საუკუნის მიწურულს გაიმართა ნორვეგიაში, რის შემდეგაც სპორტის ეს სახეობა განსაკუთრებით სწრაფად განვითარდა შვედეთში, ფინეთსა და ნორვეგიაში. მოგვიანებით ორიენტირება გავრცელდა ბალტიისპირეთის ქვეყნებში, ევროპის სხვა სახელმწიფოებში და თანდათან მსოფლიოს მრავალ ქვეყანაში.',en:'Scandinavia is regarded as the birthplace of sport orienteering. The first known public competitions were held in Norway at the end of the nineteenth century, after which the sport developed especially rapidly in Sweden, Finland and Norway. Orienteering later spread to the Baltic countries, other European states and, gradually, to many countries around the world.'},
+   {type:'p',ka:'1961 წელს შეიქმნა **სპორტული ორიენტირების საერთაშორისო ფედერაცია — International Orienteering Federation (IOF)**, რომელმაც მნიშვნელოვანი როლი შეასრულა სპორტის საერთაშორისო განვითარებაში, ერთიანი წესებისა და სტანდარტების ჩამოყალიბებასა და საერთაშორისო შეჯიბრებების ორგანიზებაში.',en:'In 1961 the **International Orienteering Federation (IOF)** was founded. It played an important role in the international development of the sport, in establishing common rules and standards, and in organising international competitions.'},
+   {type:'p',ka:'ორიენტირებაში პირველი მსოფლიო ჩემპიონატი 1966 წელს გაიმართა. შემდგომ წლებში სპორტის სახეობა მნიშვნელოვნად გაფართოვდა და ჩამოყალიბდა საერთაშორისო სპორტულ მოძრაობად.',en:'The first World Orienteering Championships were held in 1966. In the years that followed, the sport expanded significantly and became an international sporting movement.'}
+  ]
+ },
+ {
+  id:'georgia-first-steps',
+  year:'1980',
+  titleKa:'სპორტული ორიენტირების პირველი ნაბიჯები საქართველოში',
+  titleEn:'First steps of sport orienteering in Georgia',
+  blocks:[
+   {type:'p',ka:'საქართველოში სპორტული ორიენტირების ისტორიაში ერთ-ერთი უმნიშვნელოვანესი თარიღია **1980 წლის მაისი**, როდესაც **ლაგოდეხის ნაკრძალში საქართველოს პირველი ოფიციალური ჩემპიონატი** გაიმართა.',en:'One of the most important dates in the history of orienteering in Georgia is **May 1980**, when **Georgia’s first official championship was held in Lagodekhi Nature Reserve**.'},
+   {type:'p',ka:'ჩემპიონატში მონაწილეობდა ხუთი გუნდი:',en:'Five teams took part in the championship:'},
+   {type:'list',items:[
+    {ka:'**ლაგოდეხის გუნდი** — მწვრთნელი სოზარ ბერიშვილი',en:'**The Lagodekhi team** — coach Sozar Berishvili'},
+    {ka:'**თბილისის ორი გუნდი** — მწვრთნელები გოგი ხიდეშელი, კოლია გურიანოვი და ფატი ბურდული',en:'**Two teams from Tbilisi** — coaches Gogi Khidesheli, Kolya Gurianov and Fati Burduli'},
+    {ka:'**ქუთაისის გუნდი**, რომელიც პოლიტექნიკური ტექნიკუმის ბაზაზე იყო დაკომპლექტებული — მწვრთნელი ბონდო ხვედელიძე',en:'**The Kutaisi team**, formed on the basis of the Polytechnic Technicum — coach Bondo Khvedelidze'},
+    {ka:'**აფხაზეთის ნაკრები** — მწვრთნელი ზურაბ შენგელია (პროკოფის ძე), რომელიც მოგვიანებით საქართველოს ერთიანობისათვის ბრძოლაში დაიღუპა',en:'**The Abkhazia team** — coach Zurab Shengelia (son of Prokopi), who later died in the struggle for Georgia’s unity'}
+   ]},
+   {type:'p',ka:'ეს გუნდები და მათი მწვრთნელები შემდგომ წლებში მნიშვნელოვან როლს ასრულებდნენ საქართველოში სპორტული ორიენტირების განვითარებაში და საბჭოთა კავშირის დაშლამდე აქტიურად მონაწილეობდნენ საქართველოს მასშტაბით გამართულ შეჯიბრებებში.',en:'These teams and their coaches played an important role in the development of sport orienteering in Georgia in the years that followed, and until the collapse of the Soviet Union they took an active part in competitions held across Georgia.'},
+   {type:'p',ka:'ამ ადამიანების საქმიანობამ საფუძველი შეუქმნა სპორტული ორიენტირების ქართულ სკოლას და სპორტსმენთა ახალი თაობების მომზადებას.',en:'The work of these people laid the foundation of the Georgian school of sport orienteering and of the training of new generations of athletes.'}
+  ]
+ },
+ {
+  id:'ussr-championship',
+  year:'1986',
+  titleKa:'საქართველოს ნაკრები საბჭოთა კავშირის ჩემპიონატზე',
+  titleEn:'Georgia’s team at the Soviet Union championship',
+  blocks:[
+   {type:'p',ka:'ქართული ორიენტირების ისტორიაში კიდევ ერთი მნიშვნელოვანი მოვლენა იყო **1986 წლის სექტემბერში საქართველოს ნაკრების მონაწილეობა საბჭოთა კავშირის ჩემპიონატში**.',en:'Another important event in the history of Georgian orienteering was **the Georgian team’s participation in the Soviet Union championship in September 1986**.'},
+   {type:'p',ka:'შეჯიბრებები გაიმართა ყაზახეთსა და საბჭოთა კავშირის სხვა ტერიტორიებზე — მათ შორის **ყარაგანდაში, სემიპალატინსკსა და ისკიტიმში**.',en:'The competitions were held in Kazakhstan and other parts of the Soviet Union — including **Karaganda, Semipalatinsk and Iskitim**.'},
+   {type:'p',ka:'საქართველოს ნაკრების შემადგენლობაში მონაწილეობდნენ:',en:'The Georgian team included:'},
+   {type:'names',ka:'ბონდო ხვედელიძე, გიორგი ნასტენკო, ლალი ასპანაძე და გალავატენკო სოხუმიდან.',en:'Bondo Khvedelidze, Giorgi Nastenko, Lali Aspanadze and Galavatenko from Sokhumi.'},
+   {type:'p',ka:'საბჭოთა კავშირის მასშტაბის ჩემპიონატში საქართველოს ნაკრების მონაწილეობა მნიშვნელოვანი ეტაპი იყო ქართული სპორტული ორიენტირების განვითარებისთვის და ქართველი სპორტსმენებისთვის უფრო მაღალი დონის შეჯიბრებებში გამოცდილების მიღების შესაძლებლობას წარმოადგენდა.',en:'Georgia’s participation in a championship of Soviet Union scale was an important stage in the development of Georgian sport orienteering, and gave Georgian athletes the chance to gain experience at a higher level of competition.'}
+  ]
+ },
+ {
+  id:'federation',
+  year:'2005',
+  titleKa:'დამოუკიდებელი საქართველო და ეროვნული ფედერაციის შექმნა',
+  titleEn:'Independent Georgia and the founding of the national federation',
+  blocks:[
+   {type:'p',ka:'საქართველოს დამოუკიდებლობის აღდგენის შემდეგ სპორტული ორიენტირების ორგანიზაციული განვითარების ახალი ეტაპი დაიწყო.',en:'After the restoration of Georgia’s independence, a new stage in the organisational development of sport orienteering began.'},
+   {type:'p',ka:'განსაკუთრებით მნიშვნელოვანი იყო **2005 წელი**.',en:'**2005** was a particularly important year.'},
+   {type:'p',ka:'**2005 წლის 9 მაისს**, საინიციატივო ჯგუფის ძალისხმევით, დამოუკიდებელი საქართველოს ისტორიაში პირველად შეიქმნა **საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია**.',en:'On **9 May 2005**, through the efforts of an initiating group, the **Georgian National Orienteering Federation** was founded for the first time in the history of independent Georgia.'},
+   {type:'p',ka:'ფედერაციის შექმნის საინიციატივო ჯგუფში შედიოდნენ:',en:'The initiating group included:'},
+   {type:'names',ka:'ბონდო ხვედელიძე — ინიციატორი, ბესიკ ჯანელიძე, აკაკი ხვედელიძე, ვლადიმერ ნაკაშიძე და მალხაზ მაისაშვილი.',en:'Bondo Khvedelidze — initiator, Besik Janelidze, Akaki Khvedelidze, Vladimer Nakashidze and Malkhaz Maisashvili.'},
+   {type:'p',ka:'ფედერაციის შექმნიდან რამდენიმე თვეში კიდევ ერთი უმნიშვნელოვანესი ნაბიჯი გადაიდგა: **2005 წლის 9 აგვისტოს საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია გაწევრიანდა სპორტული ორიენტირების საერთაშორისო ფედერაციაში (IOF)**.',en:'A few months after the federation was founded, another crucial step was taken: **on 9 August 2005 the Georgian National Orienteering Federation joined the International Orienteering Federation (IOF)**.'},
+   {type:'p',ka:'ეს მოვლენა საქართველოსთვის საერთაშორისო ორიენტირების სივრცეში ოფიციალური ინტეგრაციის მნიშვნელოვანი ეტაპი გახდა და ქართველ სპორტსმენებსა და ორგანიზატორებს საერთაშორისო სპორტულ საზოგადოებასთან უფრო მჭიდრო თანამშრომლობის შესაძლებლობა მისცა.',en:'This event marked an important stage in Georgia’s official integration into the international orienteering community, and gave Georgian athletes and organisers the chance to work more closely with the international sporting world.'}
+  ]
+ },
+ {
+  id:'next-generation',
+  titleKa:'ისტორიის შენარჩუნება და ახალი თაობა',
+  titleEn:'Preserving history and a new generation',
+  closing:true,
+  blocks:[
+   {type:'p',ka:'ქართული სპორტული ორიენტირების ისტორია მხოლოდ შეჯიბრებებისა და შედეგების ისტორია არ არის. ის იმ ადამიანების ისტორიაცაა, რომლებმაც სხვადასხვა პერიოდში საკუთარი შრომით, ენთუზიაზმითა და პირადი ინიციატივით სპორტის ეს სახეობა საქართველოში განავითარეს.',en:'The history of Georgian sport orienteering is not only a history of competitions and results. It is also the history of the people who, in different periods, developed this sport in Georgia through their own labour, enthusiasm and personal initiative.'},
+   {type:'p',ka:'ლაგოდეხის პირველი ოფიციალური ჩემპიონატი, თბილისში, ქუთაისში, ლაგოდეხსა და აფხაზეთში ჩამოყალიბებული გუნდები, მათი მწვრთნელები და სპორტსმენები, საქართველოს ნაკრების მონაწილეობა საკავშირო შეჯიბრებებში და საბოლოოდ დამოუკიდებელი საქართველოს ეროვნული ფედერაციის შექმნა ქართული ორიენტირების ისტორიის მნიშვნელოვანი ეტაპებია.',en:'The first official championship in Lagodekhi; the teams formed in Tbilisi, Kutaisi, Lagodekhi and Abkhazia; their coaches and athletes; the Georgian team’s participation in all-union competitions; and finally the founding of the national federation of independent Georgia — these are important stages in the history of Georgian orienteering.'},
+   {type:'p',ka:'ამ ისტორიის დოკუმენტირება განსაკუთრებით მნიშვნელოვანია დღეს, როდესაც საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია აქტიურად აგრძელებს მუშაობას სპორტის განვითარების მიმართულებით. განსაკუთრებული ყურადღება ეთმობა ბავშვებისა და ახალგაზრდების ჩართულობას, სკოლებში სპორტული ორიენტირების სწავლებას, ქართულენოვანი სასწავლო ლიტერატურის შექმნას, მწვრთნელებისა და პედაგოგების მომზადებას, ასევე სპორტის პოპულარიზაციას საქართველოს სხვადასხვა რეგიონში.',en:'Documenting this history is especially important today, when the Georgian National Orienteering Federation continues to work actively to develop the sport. Particular attention is given to the involvement of children and young people, the teaching of sport orienteering in schools, the creation of Georgian-language educational literature, the training of coaches and teachers, and the popularisation of the sport in Georgia’s regions.'},
+   {type:'p',ka:'წინა თაობების მიერ დაგროვილი გამოცდილების შენარჩუნება და ახალი თაობისთვის გადაცემა საქართველოს სპორტული ორიენტირების ეროვნული ფედერაციის ერთ-ერთი მნიშვნელოვანი ამოცანაა.',en:'Preserving the experience gathered by previous generations and passing it on to a new generation is one of the important tasks of the Georgian National Orienteering Federation.'},
+   {type:'p',ka:'ქართული ორიენტირების ისტორია გრძელდება — მისი წარსულის შენარჩუნებით, ახალი სპორტსმენების აღზრდით და სპორტის განვითარებით საქართველოს მასშტაბით.',en:'The history of Georgian orienteering continues — by preserving its past, raising new athletes and developing the sport across Georgia.'}
+  ]
+ }
+];
 export const maps:HistoricalMap[]=[]; export const people:HistoricalPerson[]=[]; export const activities:Activity[]=[];
 export const guidePublication={
  cover:'/images/Publication/Cover.png',
@@ -19,8 +94,8 @@ export const news:NewsArticle[]=[
  {id:'guide-2026',slug:'saswavlo-gzamkvlevi',category:'publication',publishedAt:'2026-09',image:guidePublication.cover,
   titleKa:'გამოიცა სპორტული ორიენტირების სასწავლო გზამკვლევი',
   titleEn:'A learning guide to sport orienteering has been published',
-  summaryKa:'საქართველოს სპორტული ორიენტირების ეროვნულმა ფედერაციამ 2026 წლის სექტემბერში გამოსცა გზამკვლევი ქართულ ენაზე სპორტული ორიენტირების სასწავლად.',
-  summaryEn:'In September 2026 the Georgian National Orienteering Federation published a Georgian-language guide for learning sport orienteering.',
+  summaryKa:'საქართველოს სპორტული ორიენტირების ეროვნულმა ფედერაციამ 2026 წლის სექტემბერში გამოსცა სპორტული ორიენტირების ქართულენოვანი გზამკვლევი.',
+  summaryEn:'In September 2026 the Georgian National Orienteering Federation published a Georgian-language sport orienteering guide.',
   contentKa:[
    'გამოცემა განკუთვნილია სკოლის მოსწავლეების, სპორტის მასწავლებლების, სტუდენტებისა და ყველა დაინტერესებული პირისთვის.'
   ],

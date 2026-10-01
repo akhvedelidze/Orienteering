@@ -7,7 +7,7 @@ export function HighlightRibbon({lang}:{lang:'ka'|'en'}){
   const loop=[...highlightPhotos,...highlightPhotos];
   return (
     <Link
-      href="/history#photos"
+      href="/history/#photos"
       className="group block overflow-hidden rounded-2xl border border-white/15 bg-white/5 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
       aria-label={t(lang,'ფოტოარქივის ნახვა','View the photo archive')}
     >
