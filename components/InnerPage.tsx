@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';import Image from 'next/image';import {Archive,ArrowRight,BookOpen,CheckCircle2,Clock,Compass,Download,FileText,Flag,Globe2,Map,Mountain,Play,School,Users} from 'lucide-react';import {useLanguage} from './LanguageProvider';import {featuredLinkIds,guidePublication,historyLead,lessons,news,t,usefulLinkGroups,videoGroups} from '@/lib/content';import {UsefulLink} from '@/lib/types';import {Section} from './Section';import {PhotoArchive} from './PhotoArchive';import {HistoryEssay,HistorySubnav} from './HistoryEssay';
+import Link from 'next/link';import Image from 'next/image';import {Archive,ArrowRight,BookOpen,CheckCircle2,Clock,Compass,Download,ExternalLink,FileText,Flag,Globe2,Map,Mountain,Play,School,Users} from 'lucide-react';import {useLanguage} from './LanguageProvider';import {featuredLinkIds,guidePublication,historyLead,lessons,news,t,usefulLinkGroups,videoGroups} from '@/lib/content';import {NewsArticle,UsefulLink} from '@/lib/types';import {Section} from './Section';import {PhotoArchive} from './PhotoArchive';import {HistoryEssay,HistorySubnav} from './HistoryEssay';
 const configs:Record<string,{ka:string;en:string;kicker:string;dka:string;den:string}>={
  'federation':{ka:'ფედერაციის შესახებ',en:'About the federation',kicker:'ORGANISATION',dka:'ვქმნით მყარ საფუძველს საქართველოში სპორტული ორიენტირების აღდგენისა და გრძელვადიანი განვითარებისთვის.',den:'Building a strong foundation for the revival and long-term development of orienteering in Georgia.'},
  'history':{ka:'სპორტული ორიენტირების ისტორია საქართველოში',en:'History of orienteering in Georgia',kicker:'HISTORY & MEMORY',dka:historyLead.ka,den:historyLead.en},
@@ -26,7 +26,7 @@ const discipline=[
  {en:'MTBO',ka:'MTB ორიენტირება — MTBO',img:'/images/orienteering/mtbo.jpg',den:'Orienteering on a mountain bike. Using a specialised map, the participant chooses the best route through a network of roads and paths. It requires fast navigation, good bike handling and safety.',dka:'ორიენტირება სამთო ველოსიპედით. მონაწილე სპეციალური რუკის დახმარებით ირჩევს საუკეთესო მარშრუტს გზებისა და ბილიკების ქსელში. საჭიროა სწრაფი ნავიგაცია, ველოსიპედის კარგად მართვა და უსაფრთხოების წესების დაცვა.'},
  {en:'SkiO',ka:'სათხილამურო ორიენტირება — SkiO',img:'/images/orienteering/skio.jpg',den:'A winter discipline in which the participant moves on skis through a network of prepared tracks. Success requires fast map reading, choosing the right route and moving freely on skis.',dka:'ზამთრის დისციპლინა, რომელშიც მონაწილე თხილამურებით გადაადგილდება მომზადებული ტრასების ქსელში. წარმატებისთვის საჭიროა რუკის სწრაფად წაკითხვა, სწორი მარშრუტის არჩევა და თხილამურებით თავისუფლად გადაადგილება.'}
 ];
-export function InnerPage({slug}:{slug:string}){const{lang}=useLanguage();const pageSlug=slug==='history/timeline'?'history':slug;const configKey=pageSlug==='learn'?'orienteering':pageSlug.replace(/^orienteering\//,'learn/');const c=configs[configKey]||configs[pageSlug]||configs['orienteering'];const isSportHome=pageSlug==='orienteering'||pageSlug==='learn';const isLesson=pageSlug.startsWith('learn/')||pageSlug.startsWith('orienteering/');return <><section className="topo bg-[#113a2f] py-24 text-white md:py-32"><div className="container"><p className="eyebrow">{c.kicker}</p><h1 className="mt-4 max-w-5xl text-[clamp(2.5rem,6vw,5rem)]">{t(lang,c.ka,c.en)}</h1><p className="mt-6 max-w-3xl text-lg text-white/70">{t(lang,c.dka,c.den)}</p></div></section>{pageSlug.startsWith('history')?<History lang={lang} slug={pageSlug}/>:isSportHome?<Sport lang={lang}/>:isLesson?<Learn lang={lang} slug={pageSlug}/>:pageSlug==='federation'?<Federation lang={lang}/>:pageSlug==='contact'?<Contact lang={lang}/>:<Library lang={lang} slug={pageSlug}/>}</>}
+export function InnerPage({slug}:{slug:string}){const{lang}=useLanguage();const pageSlug=slug==='history/timeline'?'history':slug;const configKey=pageSlug==='learn'?'orienteering':pageSlug.replace(/^orienteering\//,'learn/');const c=configs[configKey]||configs[pageSlug]||configs['orienteering'];const isSportHome=pageSlug==='orienteering'||pageSlug==='learn';const isLesson=pageSlug.startsWith('learn/')||pageSlug.startsWith('orienteering/');return <><section className="topo bg-[#113a2f] py-24 text-white md:py-32"><div className="container"><p className="eyebrow">{c.kicker}</p><h1 className="mt-4 max-w-5xl text-[clamp(2rem,4vw,3rem)]">{t(lang,c.ka,c.en)}</h1><p className="mt-6 max-w-3xl text-lg text-white/70">{t(lang,c.dka,c.den)}</p></div></section>{pageSlug.startsWith('history')?<History lang={lang} slug={pageSlug}/>:isSportHome?<Sport lang={lang}/>:isLesson?<Learn lang={lang} slug={pageSlug}/>:pageSlug==='federation'?<Federation lang={lang}/>:pageSlug==='contact'?<Contact lang={lang}/>:<Library lang={lang} slug={pageSlug}/>}</>}
 function History({lang,slug}:{lang:'ka'|'en';slug:string}){
   const nav=<HistorySubnav lang={lang} slug={slug}/>;
   if(slug==='history/maps'||slug==='history/people')return <>{nav}<Section><Empty icon={slug.endsWith('maps')?Map:Users} title={t(lang,'ინფორმაციები მზადების პროცესშია','Information is being prepared.')} text=""/></Section></>;
@@ -72,25 +72,49 @@ function Federation({lang}:{lang:'ka'|'en'}){
   ];
   return <><Section><div className="grid gap-14">{blocks.map((x,i)=><article key={x.en} className="grid items-center gap-8 md:grid-cols-2"><div className={`relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-100 ${i%2===1?'md:order-2':''}`}><Image src={x.img} alt={t(lang,x.ka,x.en)} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 50vw"/></div><div><h2 className="!text-3xl">{t(lang,x.ka,x.en)}</h2><p className="mt-4 text-lg leading-relaxed text-slate-600">{t(lang,x.dka,x.den)}</p></div></article>)}</div></Section><Section className="bg-[#f5f3eb]"><h2>{t(lang,'საქმიანობის მიმართულებები','Areas of work')}</h2><div className="mt-9 grid gap-4 md:grid-cols-4">{['სპორტის განვითარება|Sport development','ახალგაზრდები და სკოლები|Youth and schools','სწავლება|Education','რუკების შექმნა|Mapmaking','შეჯიბრებები|Competitions','ისტორიული მემკვიდრეობა|Historical legacy','საერთაშორისო თანამშრომლობა|International cooperation'].map(x=>{let[a,b]=x.split('|');return <div className="card" key={b}><Compass className="text-orange-600"/><b className="mt-6 block">{t(lang,a,b)}</b></div>})}</div><div className="mt-14"><h2 className="!text-3xl">{t(lang,'ხელმძღვანელობა და სტრუქტურა','Leadership and structure')}</h2><Empty icon={Users} title={t(lang,'ინფორმაციები მზადების პროცესშია','Information is being prepared.')} text=""/></div></Section></>}
 function NewsFeed({lang}:{lang:'ka'|'en'}){
-  const article=news[0];
-  if(!article)return <Section><Empty icon={Clock} title={t(lang,'ინფორმაციები მზადების პროცესშია','Information is being prepared.')} text=""/></Section>;
-  return <Section>
-    <article className="overflow-hidden rounded-3xl border border-[#dde4df] bg-white shadow-[0_18px_40px_#143b2814] md:grid md:grid-cols-[minmax(260px,.9fr)_1.1fr]">
-      <div className="flex items-center justify-center bg-[#0c3026] p-8 md:p-12">
-        <Image src={guidePublication.cover} alt={t(lang,guidePublication.titleKa,guidePublication.titleEn)} width={420} height={594} className="w-full max-w-sm rounded-lg shadow-2xl" priority/>
-      </div>
-      <div className="flex flex-col justify-center p-8 md:p-12">
-        <p className="eyebrow">PUBLICATION</p>
-        <p className="mt-3 text-sm font-bold text-orange-600">{t(lang,guidePublication.dateKa,guidePublication.dateEn)}</p>
-        <h2 className="mt-4 !text-3xl md:!text-4xl">{t(lang,article.titleKa,article.titleEn)}</h2>
-        <p className="mt-5 text-lg text-slate-600">{t(lang,article.summaryKa,article.summaryEn)}</p>
-        <div className="mt-5 space-y-3 text-slate-600">{(lang==='ka'?article.contentKa:article.contentEn).map(p=><p key={p}>{p}</p>)}</div>
-        <a className="btn btn-primary mt-8 w-fit" href={guidePublication.pdf} download>
-          <Download size={17}/> {t(lang,'გზამკვლევის გადმოწერა','Download the guide')}
-        </a>
-      </div>
+  if(!news.length)return <Section><Empty icon={Clock} title={t(lang,'ინფორმაციები მზადების პროცესშია','Information is being prepared.')} text=""/></Section>;
+  return <Section><div className="space-y-12">{news.map((article,i)=><NewsArticleCard key={article.id} lang={lang} article={article} featured={i===0}/>)}</div></Section>;
+}
+function NewsArticleCard({lang,article,featured}:{lang:'ka'|'en';article:NewsArticle;featured?:boolean}){
+  const isPub=article.category==='publication';
+  const title=t(lang,article.titleKa,article.titleEn);
+  const date=article.dateKa||article.dateEn?t(lang,article.dateKa||'',article.dateEn||''):(isPub?t(lang,guidePublication.dateKa,guidePublication.dateEn):'');
+  const images=[article.image,...(article.gallery||[])].filter((src):src is string=>Boolean(src));
+  const facts=new Set(lang==='ka'
+    ?['თარიღი და დრო: 17 ოქტომბერი, 2026 — 10:00 საათი','ადგილი: ბათუმის ბულვარი','შეხვედრის ადგილი: საინფორმაციო სტენდთან']
+    :['Date and time: 17 October 2026 — 10:00','Place: Batumi Boulevard','Meeting point: at the information stand']);
+  const body=(lang==='ka'?article.contentKa:article.contentEn);
+  const paragraphs=body.filter(p=>!facts.has(p));
+  const detailLines=body.filter(p=>facts.has(p));
+  return (
+    <article className="overflow-hidden rounded-3xl border border-[#dde4df] bg-white shadow-[0_18px_40px_#143b2814]">
+      {isPub?(
+        <div className="md:grid md:grid-cols-[minmax(240px,.85fr)_1.15fr]">
+          <div className="flex items-center justify-center bg-[#0c3026] p-8 md:p-12">
+            <Image src={article.image||guidePublication.cover} alt={title} width={420} height={594} className="w-full max-w-sm rounded-lg shadow-2xl" priority={featured}/>
+          </div>
+          <div className="flex flex-col justify-center p-8 md:p-12">
+            <p className="eyebrow">PUBLICATION</p>
+            {date&&<p className="mt-3 text-sm font-bold text-orange-600">{date}</p>}
+            <h2 className="mt-4 !text-2xl md:!text-3xl">{title}</h2>
+            <p className="mt-5 text-lg text-slate-600">{t(lang,article.summaryKa,article.summaryEn)}</p>
+            <div className="mt-5 space-y-3 text-slate-600">{paragraphs.map(p=><p key={p}>{p}</p>)}</div>
+            <a className="btn btn-primary mt-8 w-fit" href={guidePublication.pdf} download><Download size={17}/> {t(lang,'გზამკვლევის გადმოწერა','Download the guide')}</a>
+          </div>
+        </div>
+      ):(
+        <div className="p-6 md:p-10">
+          {images.length>0&&<div className="mb-8 grid gap-4 md:grid-cols-2">{images.map((src,i)=><div key={src} className="overflow-hidden rounded-2xl bg-[#0c3026] p-3"><Image src={src} alt={title} width={520} height={735} className="w-full rounded-lg" priority={Boolean(featured&&i===0)}/></div>)}</div>}
+          <p className="eyebrow">EVENT</p>
+          {date&&<p className="mt-3 text-sm font-bold text-orange-600">{date}</p>}
+          <h2 className="mt-4 !text-2xl md:!text-3xl">{title}</h2>
+          <div className="mt-6 max-w-3xl space-y-4 text-lg text-slate-600">{paragraphs.map(p=><p key={p}>{p}</p>)}</div>
+          {detailLines.length>0&&<dl className="mt-8 grid max-w-xl gap-3 text-slate-700">{detailLines.map(line=>{const [label,...rest]=line.split(': ');return <div key={line}><dt className="text-xs font-bold uppercase tracking-wide text-slate-400">{label}</dt><dd className="font-semibold">{rest.join(': ')}</dd></div>})}</dl>}
+          {article.linkUrl&&<a className="btn btn-primary mt-8 w-fit" href={article.linkUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={17}/> {t(lang,article.linkKa||'მეტი ინფორმაცია',article.linkEn||'More information')}</a>}
+        </div>
+      )}
     </article>
-  </Section>;
+  );
 }
 function Library({lang,slug}:{lang:'ka'|'en';slug:string}){
   if(slug==='activities'||slug==='news')return <NewsFeed lang={lang}/>;
@@ -102,6 +126,7 @@ function Library({lang,slug}:{lang:'ka'|'en';slug:string}){
   const items=['სასწავლო მასალები|Learning materials','რუკები|Maps','ისტორიული მასალები|Historical materials','ოფიციალური დოკუმენტები|Official documents','სახელმძღვანელოები|Guides'];
   const allLinks=usefulLinkGroups.flatMap(g=>g.links);
   const featured=featuredLinkIds.map(id=>allLinks.find(l=>l.id===id)).filter((l):l is UsefulLink=>Boolean(l));
+  const guideNews=news.find(n=>n.id==='guide-2026');
   return <>
     <Section>
       <article className="mb-8 overflow-hidden rounded-3xl border border-[#dde4df] bg-white md:grid md:grid-cols-[220px_1fr]">
@@ -111,7 +136,7 @@ function Library({lang,slug}:{lang:'ka'|'en';slug:string}){
         <div className="flex flex-col justify-center p-7 md:p-10">
           <p className="eyebrow">PUBLICATION</p>
           <h2 className="mt-3 !text-3xl">{t(lang,guidePublication.titleKa,guidePublication.titleEn)}</h2>
-          <p className="mt-4 text-slate-600">{t(lang,news[0].summaryKa,news[0].summaryEn)}</p>
+          <p className="mt-4 text-slate-600">{t(lang,guideNews?.summaryKa||guidePublication.titleKa,guideNews?.summaryEn||guidePublication.titleEn)}</p>
           <a className="btn btn-primary mt-6 w-fit" href={guidePublication.pdf} download>
             <Download size={17}/> {t(lang,'გზამკვლევის გადმოწერა','Download the guide')}
           </a>

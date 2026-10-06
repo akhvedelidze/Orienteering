@@ -91,7 +91,49 @@ export const guidePublication={
  dateEn:'September 2026'
 };
 export const news:NewsArticle[]=[
+ {id:'batumi-acibadem-2026',slug:'batumi-orientireba-acibadem',category:'event',publishedAt:'2026-10',
+  image:'/images/news/acibadem-batumi-1.png',gallery:['/images/news/acibadem-batumi-2.png'],
+  dateKa:'17 ოქტომბერი, 2026 | 10:00 | ბათუმის ბულვარი',
+  dateEn:'17 October 2026 | 10:00 | Batumi Boulevard',
+  titleKa:'17 ოქტომბერს ბათუმში — სპორტული ორიენტირება ჯანმრთელობის მხარდასაჭერად „აჯიბადემთან“ ერთად',
+  titleEn:'17 October in Batumi — sport orienteering in support of health, together with Acibadem',
+  homeTitleKa:'17 ოქტომბერს ბათუმში — სპორტული ორიენტირება ჯანმრთელობის მხარდასაჭერად „აჯიბადემთან“ ერთად',
+  homeTitleEn:'17 October in Batumi — sport orienteering in support of health, together with Acibadem',
+  summaryKa:'საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია 17 ოქტომბერს ბათუმის ბულვარში ტურნირს გამართავს. ღონისძიება „აჯიბადემის“ (Acibadem) მიერ ორგანიზებული, ძუძუს კიბოს შესახებ ცნობიერების ამაღლებისადმი მიძღვნილი დღის ფარგლებში ჩატარდება.',
+  summaryEn:'On 17 October the Georgian National Orienteering Federation will hold a tournament on Batumi Boulevard. The event will take place as part of a day organised by Acibadem, dedicated to raising awareness of breast cancer.',
+  homeKa:[
+   'საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია 17 ოქტომბერს ბათუმის ბულვარში ტურნირს გამართავს. ღონისძიება „აჯიბადემის“ (Acibadem) მიერ ორგანიზებული, ძუძუს კიბოს შესახებ ცნობიერების ამაღლებისადმი მიძღვნილი დღის ფარგლებში ჩატარდება.',
+   'შემოგვიერთდით ვარდისფერ ბილიკზე — ერთად ვითამაშოთ, გავიგოთ მეტი და მხარი დავუჭიროთ ერთმანეთს!'
+  ],
+  homeEn:[
+   'On 17 October the Georgian National Orienteering Federation will hold a tournament on Batumi Boulevard. The event will take place as part of a day organised by Acibadem, dedicated to raising awareness of breast cancer.',
+   'Join us on the pink path — let’s play together, learn more and support one another!'
+  ],
+  linkUrl:'https://www.facebook.com/AcibademGeorgia',
+  linkKa:'მეტი ინფორმაცია — Acibadem Georgia',
+  linkEn:'More information — Acibadem Georgia',
+  contentKa:[
+   '2026 წლის 17 ოქტომბერს საქართველოს სპორტული ორიენტირების ეროვნული ფედერაცია ბათუმის ბულვარში სპორტული ორიენტირების ტურნირს გამართავს. ტურნირი „აჯიბადემის“ (Acibadem) მიერ ორგანიზებული, ძუძუს კიბოს შესახებ ცნობიერების ამაღლებისადმი მიძღვნილი დღის ფარგლებში ჩატარდება.',
+   'ღონისძიება — „მოდი, შევხვდეთ ვარდისფერ ბილიკზე“ — აერთიანებს ფიზიკურ აქტივობას, ჯანმრთელობის შესახებ ინფორმაციის გაზიარებასა და ერთმანეთის მხარდაჭერას. მონაწილეები გუნდურად გაივლიან საორიენტაციო მარშრუტს, მოძებნიან საკონტროლო პუნქტებს და თამაშის პროცესში მიიღებენ მნიშვნელოვან ინფორმაციას ძუძუს ჯანმრთელობის შესახებ.',
+   'ჩვენი ფედერაციისთვის სასიხარულოა ამ ინიციატივაში მონაწილეობა და სპორტული ორიენტირების მეშვეობით აქტიური ცხოვრების წესისა და ჯანმრთელობის შესახებ ცნობიერების ამაღლების ხელშეწყობა.',
+   'თარიღი და დრო: 17 ოქტომბერი, 2026 — 10:00 საათი',
+   'ადგილი: ბათუმის ბულვარი',
+   'შეხვედრის ადგილი: საინფორმაციო სტენდთან',
+   'რეგისტრაციისთვის ეწვიეთ „აჯიბადემის“ ბათუმის ოფისს — ზურაბ გორგილაძის ქუჩა №2, დარეკეთ ნომერზე +995 422 223 000, ან გამოიყენეთ ღონისძიების ფლაერზე განთავსებული QR კოდი.',
+   'შემოგვიერთდით ვარდისფერ ბილიკზე!'
+  ],
+  contentEn:[
+   'On 17 October 2026 the Georgian National Orienteering Federation will hold a sport orienteering tournament on Batumi Boulevard. The tournament will take place as part of a day organised by Acibadem, dedicated to raising awareness of breast cancer.',
+   'The event — “Come, let’s meet on the pink path” — brings together physical activity, sharing information about health, and supporting one another. Participants will complete an orienteering course in teams, find control points and, along the way, receive important information about breast health.',
+   'The federation is glad to take part in this initiative and, through sport orienteering, to help promote an active way of life and greater awareness of health.',
+   'Date and time: 17 October 2026 — 10:00',
+   'Place: Batumi Boulevard',
+   'Meeting point: at the information stand',
+   'To register, visit the Acibadem Batumi office — 2 Zurab Gorgiladze Street, call +995 422 223 000, or use the QR code on the event flyer.',
+   'Join us on the pink path!'
+  ]},
  {id:'guide-2026',slug:'saswavlo-gzamkvlevi',category:'publication',publishedAt:'2026-09',image:guidePublication.cover,
+  dateKa:guidePublication.dateKa,dateEn:guidePublication.dateEn,
   titleKa:'გამოიცა სპორტული ორიენტირების სასწავლო გზამკვლევი',
   titleEn:'A learning guide to sport orienteering has been published',
   summaryKa:'საქართველოს სპორტული ორიენტირების ეროვნულმა ფედერაციამ 2026 წლის სექტემბერში გამოსცა სპორტული ორიენტირების ქართულენოვანი გზამკვლევი.',

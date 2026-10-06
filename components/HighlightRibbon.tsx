@@ -14,7 +14,7 @@ export function HighlightRibbon({lang}:{lang:'ka'|'en'}){
       <div className="overflow-hidden py-2">
         <div className="highlight-marquee flex w-max gap-4 group-hover:[animation-play-state:paused]">
           {loop.map((src,i)=>
-            <img key={src+i} src={src} alt={caption} className="h-48 w-72 shrink-0 rounded-xl object-cover sm:h-56 sm:w-80 md:h-64 md:w-[22rem]"/>
+            <img key={src+i} src={src} alt={caption} className="h-36 w-56 shrink-0 rounded-xl object-cover sm:h-44 sm:w-64 md:h-52 md:w-80"/>
           )}
         </div>
       </div>
