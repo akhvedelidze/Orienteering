@@ -1,3 +1,29 @@
+import type {Metadata} from 'next';
+import {notFound} from 'next/navigation';
 import {InnerPage} from '@/components/InnerPage';
-export function generateStaticParams(){return ['federation','history','history/timeline','history/maps','history/people','history/archive','orienteering','orienteering/map','orienteering/compass','orienteering/controls','orienteering/route-choice','orienteering/first-steps','orienteering/competition','learn','learn/map','learn/compass','learn/controls','learn/route-choice','learn/first-steps','learn/competition','activities','news','resources','documents','contact'].map(x=>({slug:x.split('/')}))}
-export default async function Page({params}:{params:Promise<{slug:string[]}>}){const{slug}=await params;return <InnerPage slug={slug.join('/')}/>}
+import {buildMetadata,getNewsArticle,resolvePageKey,STATIC_SLUGS} from '@/lib/seo';
+
+export function generateStaticParams(){
+  return STATIC_SLUGS.map(x=>({slug:x.split('/')}));
+}
+
+export async function generateMetadata({params}:{params:Promise<{slug:string[]}>}):Promise<Metadata>{
+  const {slug}=await params;
+  const pathKey=resolvePageKey(slug);
+  if(pathKey.startsWith('news/')&&!getNewsArticle(pathKey.slice(5))){
+    return {title:'Not found'};
+  }
+  if(!pathKey||(!STATIC_SLUGS.includes(pathKey)&&!pathKey.startsWith('news/'))){
+    return buildMetadata('');
+  }
+  return buildMetadata(pathKey);
+}
+
+export default async function Page({params}:{params:Promise<{slug:string[]}>}){
+  const {slug}=await params;
+  const pathKey=resolvePageKey(slug);
+  if(pathKey.startsWith('news/')&&pathKey!=='news'&&!getNewsArticle(pathKey.slice(5))){
+    notFound();
+  }
+  return <InnerPage slug={pathKey}/>;
+}
